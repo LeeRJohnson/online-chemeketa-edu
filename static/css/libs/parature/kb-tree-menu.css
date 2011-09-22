@@ -1,0 +1,107 @@
+#treeView {
+    width: 310px;
+    position: absolute;
+    right: -310px;
+    top: 39px;
+
+}
+.treeViewContainer {}
+    h4.treeViewRoot {}
+    #treeViewChildMarkup {}
+    .treeViewChildFolders {}
+/*                              *\
+    YUI Tree Grid
+\*                              */
+
+.ygtvtn {
+    background: none repeat scroll 0 0 transparent !important;
+    height: 20px !important;
+    width: 1em !important;
+}
+.ygtvtm {
+    background: url("https://developer.yahoo.com/yui/examples/treeview/assets/img/menu/collapse.gif") no-repeat scroll 0 6px transparent !important;
+    cursor: pointer !important;
+    height: 22px !important;
+    width: 1em !important;
+}
+.ygtvtmh {
+    background: url("https://developer.yahoo.com/yui/examples/treeview/assets/img/menu/collapseh.gif") no-repeat scroll 0 6px transparent !important;
+    cursor: pointer !important;
+    height: 22px !important;
+    width: 1em !important;
+}
+.ygtvtp {
+    background: url("https://developer.yahoo.com/yui/examples/treeview/assets/img/menu/expand.gif") no-repeat scroll 0 6px transparent !important;
+    cursor: pointer !important;
+    height: 22px !important;
+    width: 1em !important;
+}
+.ygtvtph {
+    background: url("https://developer.yahoo.com/yui/examples/treeview/assets/img/menu/expandh.gif") no-repeat scroll 0 6px transparent !important;
+    cursor: pointer !important;
+    height: 22px !important;
+    width: 1em !important;
+}
+.ygtvln {
+    background: none repeat scroll 0 0 transparent !important;
+    height: 20px !important;
+    width: 1em !important;
+}
+.ygtvlm {
+    background: url("https://developer.yahoo.com/yui/examples/treeview/assets/img/menu/collapse.gif") no-repeat scroll 0 6px transparent !important;
+    cursor: pointer !important;
+    height: 22px !important;
+    width: 1em !important;
+}
+.ygtvlmh {
+    background: url("https://developer.yahoo.com/yui/examples/treeview/assets/img/menu/collapseh.gif") no-repeat scroll 0 6px transparent !important;
+    cursor: pointer !important;
+    height: 22px !important;
+    width: 1em !important;
+}
+.ygtvlp {
+    background: url("https://developer.yahoo.com/yui/examples/treeview/assets/img/menu/expand.gif") no-repeat scroll 0 6px transparent !important;
+    cursor: pointer !important;
+    height: 22px !important;
+    width: 1em !important;
+}
+.ygtvlph {
+    background: url("https://developer.yahoo.com/yui/examples/treeview/assets/img/menu/expandh.gif") no-repeat scroll 0 6px transparent !important;
+    cursor: pointer !important;
+    height: 22px !important;
+    width: 1em !important;
+}
+.ygtvloading {
+    background: url("https://developer.yahoo.com/yui/examples/treeview/assets/img/menu/loading.gif") no-repeat scroll 0 6px transparent !important;
+    height: 22px !important;
+    width: 1em !important;
+}
+.ygtvdepthcell {
+    background: none repeat scroll 0 0 transparent !important;
+    height: 20px !important;
+    width: 1em !important;
+}
+.ygtvblankdepthcell {
+    background: none repeat scroll 0 0 transparent !important;
+    height: 20px !important;
+    width: 1em !important;
+}
+.ygtvitem {
+    border: 0 solid grey !important;
+}
+.ygtvchildren {
+}
+* html .ygtvchildren {
+    height: 1% !important;
+}
+a.ygtvspacer:hover{
+    background:transparent;
+}
+.ygtvlabel, .ygtvlabel:link, .ygtvlabel:visited, .ygtvlabel:hover {
+    font-size: 12px !important;
+    background:none;
+    text-shadow:0 0 0 #fff;
+    color:#781f1c!important;
+    display:block;
+
+}

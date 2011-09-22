@@ -1,0 +1,418 @@
+/* original styles (modified) */
+body, table, .linkmenu { 
+	font-size:1.0em;
+	font-family: Arial, Helvetica, sans-serif ;
+}
+
+img {
+	border: 0;
+}
+
+.body { 
+	font-family: Arial, Helvetica, sans-serif; 
+	background-color: White;
+	background-image: none;
+}
+
+.list {
+	
+}
+
+.medium { 
+	font-weight:bold; 
+	font-size:0.7em;
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+.progname_subzone { 
+	color: #006363; 
+	font-weight: bold; 
+	font-size: 0.8em; 
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+.reverse { 
+	color: #fff 
+}
+
+.small { 
+	font-size: 0.8em; 
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+.sidebar { 
+	font-size:0.9em; 
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.smallhead { 
+	font-family: Helvetica, Arial, sans-serif; 
+}
+
+.browsehead { 
+	font-size: 1.1em; 
+	font-family: Helvetica, Arial, sans-serif; 
+}
+
+.stronger { 
+	color: #c00; 
+	font-family: Arial, Helvetica, SunSans-Regular; 
+}
+
+a:link { color: #9A4811; text-decoration: none; }
+a:visited { color: #9A4811; text-decoration: none; }
+a:active { color: #9A4811; text-decoration: none; }
+a:hover { color: #9A4811; text-decoration: none; background-color: transparent; }
+
+body { 
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+h1 { 
+	font-size: 1.9em;  
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #9A4811;
+	font-style: normal;
+}
+
+h1#top { 
+	font-size: large;  
+	color: #9A4811;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+h2 { 
+	font-size: 1.15em; 
+	font-family: Helvetica, Arial, sans-serif; 
+	margin-bottom: 0%; 
+}
+
+h3 { 
+	font-size: 1em; 
+	font-family: Helvetica, Arial, sans-serif; 
+	margin-bottom: 0; 
+}
+
+h4 { 
+	font-size: 0.9em; 
+	font-family: Helvetica, Arial, sans-serif; 
+	margin-bottom: 0; 
+}
+
+h5 { 
+	font-weight: bold; 
+	font-size: 0.8em; 
+	font-family: Helvetica, Arial, sans-serif; 
+	margin-bottom: 0; 
+}
+
+h6 { 
+	font-style: italic;
+	font-size: 0.7em; 
+	font-family: Helvetica, Arial, sans-serif; 
+	margin-bottom: 0; 
+}
+
+li { 
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+ol { 
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+p { 
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+ul {
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+pre {
+	font-family: Monaco, Courier, "Courier New";
+}
+
+.menupg_item { 
+	color: #006; 
+	font-size: 12px; 
+	font-family: Helvetica, Arial, Geneva, Swiss, SunSans-Regular; 
+	text-decoration: none; 
+}
+
+.menupg_text { 
+	color: #999; 
+	font-size: 12px; 
+	font-family: Helvetica, Arial, Geneva, Swiss, SunSans-Regular; 
+}
+
+.breadcrumbs { 
+	color: white; 
+	font-size: 10px; 
+	font-family: Arial, Helvetica; 
+	line-height: 10px;
+}
+
+.whiteu {
+	color: white; 
+	font-family: Arial, Helvetica, SunSans-Regular, sans-serif; 
+	font-size:11px; 
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.white {
+	color: white; 
+	font-family: Arial, Helvetica, SunSans-Regular, sans-serif; 
+	font-size:11px;
+}
+
+.bi {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.b  {
+	font-weight: bold;
+}
+
+.head { 
+	font-size: 12px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	line-height: 10px;
+}
+/*  added styles post March 2008 */
+#supported table.confluenceTable {
+	background-color: #FDF5E6;
+}
+
+#supported table.confluenceTable td.confluenceTd {
+	white-space: nowrap;
+	padding-left: 0.2em;
+}
+
+#supported h4 {
+	font-size: medium;
+	font-family: "Courier New", Courier, monospace;
+}
+
+#cachepop button {
+	width:90px;
+	font-size:9pt;
+	height:1.8em;
+	margin-left:3px;
+}
+
+#cachepop fieldset legend {
+	font-weight:bold;
+}
+
+#cachepop fieldset ul {
+	list-style-type: none;
+}
+
+#cachepop fieldset ul ol li,#cachepop ul li{
+	margin-bottom: 0.8em;
+}
+
+div#popcontent {
+	padding:1em; 
+	width:500px;
+	overflow: auto;
+}
+div#popcontent.expanded {
+	width:740px;
+}
+
+table#browserreq, table#plugins {
+	border: 2px solid Black;
+	border-collapse: collapse;
+}
+table#browserreq th, table#plugins th {
+	padding-left:0.3em;
+}
+
+p#quote {
+	padding:0.4em; 
+	background-image: url(../global_images/fade-vert-beige-sm.gif);
+	width: 9em;
+	min-width: 138px;
+	
+}
+
+#headercontent {
+	background-image: url(http://online.chemeketa.edu/media/title/deat_col_header_01.gif);
+	background-repeat: no-repeat;
+}
+
+#bottomnav {
+	width:100%;
+	vertical-align: top;
+	text-align: right;
+	padding-bottom: 0.5em;
+	background-color: Black;
+}
+
+#bottomnav ul {
+	list-style: none;
+}
+
+#bottomnav li {
+	display: inline;
+	padding-right: 1.2em;
+}
+
+#bottomnav a:link, #bottomnav a:visited {
+	color: White;
+}
+
+#maincontent {
+	font-size: 1em;
+	text-align: left;
+	margin-left:12em;
+	padding:1em;
+	background-color: White;
+	max-width: 55em;
+}
+
+#maincontent li {
+	font-size: 1.1em;
+}
+
+#maincontent dl dt {
+	font-weight: bold;
+	color: Maroon;
+	font-size: 0.9em;
+}
+
+#maincontent dl dd {
+	font-size: 0.9em;
+	padding-bottom:0.7em;
+}
+
+#sidebarnav {
+	position: absolute;
+	left:0;
+	top: 50;
+	width: 10em;
+	min-width: 138px;
+	background-image: url(images/orientation_menu_beige.gif);
+	background-repeat: no-repeat;
+	background-color: #F5EEDC;
+	padding-top: 2em;
+}
+#sidebarnav ul#inner li {
+	font-size:0.9em; 
+	margin-bottom:0pt; 
+	margin-left:-16pt; 
+	
+}
+
+#linkmenu {
+	text-align: right;
+	float: right;
+	padding-right:1em;
+}
+
+#pagebuttons, #endbuttons {
+	width: 100%;
+	background-color: White;
+	text-align: right;
+	list-style: none;
+}
+#pagebuttons #nexttxt {
+	margin-right:1em;
+}
+#pagebuttons #back {
+ float: left;
+ margin-left:10em;
+}
+#pagebuttons #next {
+	text-align: right;
+}
+
+#endbuttons li {
+	display: inline;
+}
+
+#breadcrumbs {
+	font-size:0.9em;
+	text-align: right;
+	padding-right: 1em;
+}
+
+.testlink {
+	font-size:16pt;
+}
+th.rev {
+	background-color:#D29B63;
+	color:000000;
+	font-weight:bold;
+	text-align:left;
+	font-size:9pt;
+}
+.thehead {
+	font-size:11pt;
+	font-weight:bold;
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+hr {
+	color: #DEB887;
+	background-color: #DEB887;
+	height: 1px;
+	border: none;
+}
+
+hr.full {
+	width: 100%;	
+}
+
+hr.leftmost {
+	width: 80%;
+	text-align: left;
+}
+
+div.indent {
+	margin-left:1em;
+}
+
+ol#quizone li p.question {
+	color: Black;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+ol#quizone li p.answer {
+	margin-top:0;
+	margin-bottom:0;
+	padding-top:0.5em;
+	padding-bottom:1.2em;
+	height:3.2em;
+	overflow:auto;
+	font-size: 0.9em;
+	color: Navy;
+}
+
+ol#quizone li p.yes_no {
+	color: #9A4811; 
+	text-decoration: none; 
+	font-weight: bold;
+	cursor:pointer;
+}
+
+ol#quizone li p.yes_no a:hover {
+	color:#009900; 
+	text-decoration: underline; 
+	font-weight: bold; 
+	cursor:pointer;
+}
+
+#foot {
+	text-align:center;
+	font-size: 0.7em;
+}

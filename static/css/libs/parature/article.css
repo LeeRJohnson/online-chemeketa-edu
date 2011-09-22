@@ -1,0 +1,49 @@
+ /*  KB Article Selector and Content Model                  *\
+ 
+ .kbanswer_asp
+    #parature_content
+        h1.title
+        #articleAnswer
+            span#bodyfont 
+        #ratingContent 
+            #ratings 
+            #voteBox 
+                span.voteText 
+        #relatedTopics 
+            span.sectionTitle 
+            ul.relatedTopics 
+            ul.relatedTopics li 
+                #topicInformation 
+                .kb_toolbox 
+            ul.topcInformationData 
+            ul.topcInformationData li 
+        #kbutility 
+            ul#utility 
+            ul#utility li 
+                li#subscribe 
+                li.articleUtilityItem 
+                li#printArticle 
+                li#emailKb 
+                
+\*                                                          */
+
+/*                              *\
+    Article Body Typography
+\*                              */
+#articleAnswer img {
+    border: 4px solid #efefef;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 12px #4d2612;
+    box-shadow: 0px 0px 12px #4d2612;
+    background-color: #ffffff;
+    background-image: linear-gradient(top, #efefef, #ffffff);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#efefef', EndColorStr='#ffffff');
+}
+#articleAnswer font[color]{
+    color: #781f1c!important;
+}
+#articleAnswer font[face]{
+    font-family: inherit}
+#articleAnswer font[size]{
+    font-size:16px!important;
+}

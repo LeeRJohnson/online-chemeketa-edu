@@ -1,0 +1,45 @@
+﻿.hd .time, .hd .check, .hd .delivery,
+.hd .about, .hd .support, .hd .search, .hd .contact-dir,
+.hd .system, .hd .inst-tool,
+.hd .download, .hd .demo, .hd .tutor, .hd .train,
+.hd .advise, .hd .apply, .hd .orient,
+.hd .web-form, .hd .pdf, .hd .rss,
+.hd .summer, .hd .fall, .hd .winter, .hd .spring
+                {   
+                    display:block;
+                    height:inherit;
+                    line-height:50px;
+                    padding:0 0 0 50px;
+                    background:transparent url(../../media/icons/web.png) no-repeat scroll left top;}
+
+.hd .time       {   background-image:url(../../media/icons/clock.png);}
+.hd .check      {   background-image:url(../../media/icons/check.png);}
+.hd .delivery   {   background-image:url(../../media/icons/box_address.png);}
+
+.hd .about      {   background-image:url(../../media/icons/qbic.png);}
+.hd .support    {   background-image:url(../../media/icons/security.png);}
+.hd .search     {   background-image:url(../../media/icons/search.png);}
+.hd .contact-dir{   background-image:url(../../media/icons/user_group_colored.png);}
+
+.hd .system     {   background-image:url(../../media/icons/harddrive.png);}
+.hd .inst-tool  {   background-image:url(../../media/icons/case.png);}
+
+.hd .download   {   background-image:url(../../media/icons/box_download.png);}
+.hd .demo       {   background-image:url(../../media/icons/screen_aurora.png);}
+.hd .tutor      {   background-image:url(../../media/icons/screen_user.png);}
+.hd .train      {   background-image:url(../../media/icons/cutting_pad.png);}
+
+.hd .advise     {   background-image:url(../../media/icons/user_speech.png);}
+.hd .apply      {   background-image:url(../../media/icons/check.png);}
+.hd .orient     {   background-image:url(../../media/icons/compass.png);}
+
+.hd .web-form   {   background-image:url(../../media/icons/browser.png);}
+.hd .pdf        {   background-image:url(../../media/icons/file_pdf.png);}
+.hd .rss        {   background-image:url(../../media/icons/rss.png);}
+                    
+.hd .summer     {   background-image:url(../../media/icons/sun.png);}
+.hd .fall       {   background-image:url(../../media/icons/fall_leaf.png);}
+.hd .winter     {   background-image:url(../../media/icons/snowflake.png);}
+.hd .spring     {   background-image:url(../../media/icons/grass.png);}
+
+

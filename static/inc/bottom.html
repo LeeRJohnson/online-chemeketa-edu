@@ -1,0 +1,134 @@
+﻿</div></div>
+<footer id="master-footer">
+    <div class="secondary">
+    <div class="container box">
+                <div id="audience" class="first span-7 colborder">
+                    <article>
+                        <h3>Online Students...</h3>
+                        <ul>
+                            <li><a href="http://chemeketa.edu/started/" target="_blank" >Getting Started</a></li>
+                            <li><a href="http://learning.chemeketa.edu/orient/intro/intro.cfm" target="_blank" >eLearning Orientation</a></li>
+                            <li><a target="_blank"
+                       href="https://ssb-cprd.chemeketa.edu/pls/apexcprd/f?p=149:1:2595567023157749">Apply for Admission</a></li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="second span-7 colborder">
+                    <h3>Go to Your Classes</h3>
+                    <a id="elearn-button" class="" href="http://elearn.chemeketa.edu">
+                        <h3>Classic CE 8 Login</h3>
+                    </a>
+                    <a id="bb9-button" class="" href="http://chemeketa-bb.blackboard.com">
+                        <h3>Blackboard 9.1 Login</h3>
+                    </a>
+                </div>
+                <a id="support-button" href="http://d2.parature.com/ics/support/default.asp?deptID=8098">
+                    <div class="third span-7 last">
+                        <h3>Technical Support</h3>
+                        <ul>
+                            <li>Call 503.399.7399 <abbr title="24 hours a day 7 days a week">24/7</abbr>
+                            <li>Chat Online
+
+                            <li>Knowledge Base and <abbr title="Frequently Asked Questions">FAQs</abbr>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+    <div class="container">
+        <p>
+            <small>
+                &copy;&nbsp;<a href="//online.chemeketa.edu/">Chemeketa Online</a>
+                &nbsp;&#9675;&nbsp;
+                <a href="http://chemeketa.edu/">Chemeketa Community College</a>
+                Chemeketa Community College is an equal opportunity educator and employer
+            </small>
+        </p>
+    </div>
+</footer>
+</div><!--#media-->
+
+<!-- JavaScript at the bottom for fast page loading -->
+
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+<script src="https://www.google.com/jsapi?key=ABQIAAAA4ncTyN9eq3zUGOFs304I2BRqm7S2Q9V_OD-hHl30zXPGfuOWfxToE_AWXtfgGHyLyVsivBi9NVuh7g"
+        type="text/javascript"></script>
+<script>
+    //<![CDATA[
+    // Load apis
+    google.load("search", "1");
+    google.load("jquery", "1.6.2");
+    google.load("jqueryui", "1.8.14");
+
+    //TODO: Move to script utils
+    var customSearchControl = null;
+    function executeQuery() {
+        var textNode = document.getElementById('nav-search-text');
+        if (textNode.value == '') {
+            customSearchControl.clearAllResults();
+        } else {
+            customSearchControl.execute(textNode.value);
+        }
+    }
+    function OnLoad() {
+        //TODO: Move to scripts
+        // create a search control
+        customSearchControl = new google.search.CustomSearchControl('014209228378899311900:akyk20tjdlm');
+        customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+        // web search, open, alternate root
+        var options = new google.search.DrawOptions();
+        options.enableSearchResultsOnly();
+        customSearchControl.draw('cse', options);
+        //TODO: Integrate with nav ui animation and function
+        $('#cse-search-box').submit(function(event) {
+            event.preventDefault();
+            executeQuery();
+            var hashTarget = $(this).attr('action');
+            //  1. tab actions
+            $(this).toggleClass('selected');
+            //  2. menu-pane actions
+            $('.menu-pane .selected').slideUp("slow", function () {
+                $(this).toggleClass('selected');
+            });
+            $(hashTarget + ':not(.selected)').slideDown("slow").toggleClass('selected');
+
+        });
+        
+    }
+    google.setOnLoadCallback(OnLoad);
+    //]]>
+</script>
+
+<script>window.jQuery || document.write("<script src='//faculty.chemeketa.edu/ljohns10/online/static/js/libs/jquery-1.5.2.min.js'>\x3C/script>")</script>
+
+<script src="http://learning.chemeketa.edu/jquery.jcarousel.min.js"></script>
+<!-- scripts concatenated and minified via ant build script
+<script src="//faculty.chemeketa.edu/ljohns10/online/static/js/mylibs/col-utils.js"></script>
+        <script src="//faculty.chemeketa.edu/ljohns10/online/static/js/mylibs/col-ui.js"></script>-->
+<script src="//faculty.chemeketa.edu/ljohns10/online/static/js/plugins.js"></script>
+<script src="//faculty.chemeketa.edu/ljohns10/online/static/js/script.js?v=0.01"></script>
+
+<!-- end scripts-->
+<!--[if lt IE 7 ]>
+<script src="//faculty.chemeketa.edu/ljohns10/online/static/js/libs/dd_belatedpng.js"></script>
+<script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+<![endif]-->
+
+<!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+<script id="ga-js">
+
+    var _gaq = _gaq || [];
+    //_gaq.push(['_setAccount', 'UA-1421430-1']);
+    _gaq.push(['_setDomainName', '.chemeketa.edu']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>

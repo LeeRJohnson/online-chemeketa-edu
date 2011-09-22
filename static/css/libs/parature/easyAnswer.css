@@ -1,0 +1,195 @@
+
+/* EasyAnswer */
+/* Allow EasyAnswer content to be rendered inside YUI panel */
+div#divEasyAnswer_overlayContent { overflow: auto; }
+
+.easyAnswer {
+    margin: 15px 0;
+    padding: 3px;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+#divEasyAnswer table {
+    width: 500px; /* controls width of EasyAnswer results */
+    border-collapse: collapse;
+}
+
+/* EasyAnswer Header */
+.easyAnswerHeader {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px;
+}
+
+/* EasyAnswer Instructions */
+.easyAnswerInstructions {
+    padding: 2px;
+}
+
+/* EasyAnswer Search Results Box */
+.easyAnswerResultsBox td {
+    border-bottom: 6px solid #FFFFFF;
+}
+
+.easyAnswerResultsBox .yui-dt table,
+.easyAnswerResultsBox .yui-dt td {
+    border: none !important;
+    font-family: Arial; /* Needed for IE quirks mode */
+    font-size: 12px; /* Needed for IE quirks mode */
+}
+
+/* EasyAnswer Subheader (e.g. Knowledgebase, Downloads) */
+.easyAnswerResultsBox .yui-dt th,
+.easyAnswerResultsBox .yui-dt .yui-dt-label {
+    border: none !important;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+/* EasyAnswer Result Even Row */
+.easyAnswerResultsBox .yui-dt tr.yui-dt-even,
+.easyAnswerResultsBox .yui-dt tr.yui-dt-first td {
+    background-color: #FAFAFA;
+    border: none;
+}
+
+/* EasyAnswer Result Odd Row */
+.easyAnswerResultsBox .yui-dt tr.yui-dt-odd {
+    background-color: #EEEEEE;
+    border: none;
+}
+
+.easyAnswerResultHighlight {
+    background-color: #FFFF00;
+}
+
+.easyAnswerSearchResultTitle {
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.easyAnswerNoResults {
+    font-style: italic;
+    padding: 2px;
+}
+
+/* EasyAnswer Pagination */
+.easyAnswer #yui-dt0-paginator0,
+.easyAnswer #yui-dt1-paginator0 {
+    display: none; /* display pagination control on the bottom only */
+}
+
+.easyAnswer #yui-dt0-paginator1,
+.easyAnswer #yui-dt1-paginator1 {
+    display: inline; /* fixes IE double margin bug */
+}
+
+.easyAnswerPagination {
+    float: right; /* align pagination control to right */
+    padding: 6px 0px 6px 0px;
+}
+
+
+.easyAnswerPagination .yui-pg-previous,
+.easyAnswerPagination .yui-pg-next {
+    border: 1px solid #ccdbe4;
+    display: inline;
+    color: #3666d4;
+    background-color: #ffffff;
+    float: left;
+    margin: 0px 5px 0px 0px;
+    padding: 2px 8px 2px 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.easyAnswerPagination span.yui-pg-previous,
+.easyAnswerPagination span.yui-pg-next{
+    visibility: hidden;
+}
+
+.easyAnswerPagination .yui-pg-page {
+    border: 1px solid #ccdbe4;
+    display: inline;
+    color: #3666d4;
+    background-color: #ffffff;
+    float: left;
+    margin: 0px 5px 0px 0px;
+    padding: 2px 8px 2px 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.easyAnswerPagination .yui-pg-current-page {
+    border-color: none;
+    border-width: 0px;
+    border-style: none;
+    display: inline;
+    color: #000000;
+    background-color: #EEEEEE;
+    float: left;
+    font-size: 108%;
+    font-weight: 700;
+    padding: 2px 6px 2px 6px;
+}
+
+.easyAnswerPagination .yui-pg-page:hover,
+.easyAnswerPagination .yui-pg-previous:hover,
+.easyAnswerPagination .yui-pg-next:hover {
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-image: none;
+    background-position: 0% 0%;
+    background-color: #EEEEEE;
+    border-color: #CCCCCC;
+    color: #ffffff;
+}
+
+
+/* EasyAnswer Preview Panel */
+.easyAnswerPreviewPanel .contentHead2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.easyAnswerNotificationBar {
+    font-family: Arial;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: auto;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    bottom: 0;
+    color: #000000;
+    font-weight: bold;
+    height: 2.5em;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    z-index: 2000;
+    line-height: 1.5em;
+    text-decoration: underline;
+}
+/* IE quirks mode fix */
+* html .easyAnswerNotificationBar {
+    position: absolute;
+    top: expression(eval(document.compatMode &&
+        document.compatMode=='CSS1Compat') ?
+            documentElement.scrollTop +
+                (documentElement.clientHeight - this.offsetHeight) :
+            document.body.scrollTop +
+                (document.body.clientHeight - this.offsetHeight));
+    width: expression(document.body.clientWidth);
+    cursor: pointer;
+}
+
+.easyAnswerNotificationBar:hover {
+    background-color: #FFFFCC;
+    cursor: pointer;
+}

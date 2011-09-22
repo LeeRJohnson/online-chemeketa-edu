@@ -1,0 +1,47 @@
+<!--#include file="static/inc/doctype.html"-->
+    <title>Chemeketa Online</title>
+<!--#include file="static/inc/col-head.html"-->
+<body id="ccc-online">
+<!--#include file="static/inc/top.html"-->
+        <header class="page-title box">
+            <hgroup class="container">
+                <h1>Enabling students to learn. Anywhere. Anytime.</h1>
+            </hgroup>
+        </header>
+        <div class="primary container">
+            <div class="features span-15 colborder">
+                <div id="slideshow">
+                    <ul class="">
+                        <li><a href="#slide-1">1</a></li>
+                        <li><a href="#slide-2">2</a></li>
+                        <li><a href="#slide-3">3</a></li>
+                    </ul>
+                    <!--<div id="slide-template">
+                            <h1><img src="http://dummyimage.com/580x240/ef/adab69.png" alt="coming soon">
+</h1>
+                    </div>-->
+                    <div id="slide-1">
+                            <h1><img src="static/img/slides/fall-01.png" alt="coming soon">
+</h1>
+                    </div>
+                    <div id="slide-2" class="hide"><h1>
+                    <img src="static/img/slides/bb-anouncement-01.png" alt="coming soon"></h1>
+                    </div>
+                    <div id="slide-3" class="hide"><h1><img src="static/img/slides/bookstore-01.png" alt="coming soon"></h1></div>
+                </div>
+            </div>
+            <aside id="popular-links" class="prepend- span-7 last">
+                <header class="prepend-1">
+                    <h2>Popular Links</h2>
+                </header>
+                <ol class="prepend-1">
+                    <li><a href="//my.chemeketa.edu">My Chemeketa</a></li>
+                    <li><a href="//elearn.chemeketa.edu">eLearn Login</a></li>
+                    <li><a href="//bookstore.chemeketa.edu">Bookstore</a></li>
+                    <li><a href="//gmail.chemeketa.edu">Google Apps</a></li>
+                    <li><a href="//chemeketa.edu">Financial Aid</a></li>
+                    <li><a href="//techhub.chemeketa.edu/" title="The Tech Hub - Faculty Resources">Faculty</a></li>
+                </ol>
+            </aside>
+        </div>
+   <!--#include file="static/inc/bottom.html"-->

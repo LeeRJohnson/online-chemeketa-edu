@@ -1,0 +1,144 @@
+/*  KB Content and Naviation Selector and Position Model   *\
+#parature_wrapper
+#helpLayer
+#parature_navigation
+ul.mainmenu
+ul.utilitymenu
+.submenu
+.knowledge_main
+ul.submenu.knowledge_main
+#welcome
+#parature_search
+form#search
+input.searchText
+input.button
+a.searchLinks
+#parature_content
+#breadcrumbs
+h1.title
+#kbutility
+#articleAnswer
+#ratingContent
+#relatedTopics
+#treeView
+#poweredby
+#parature_footer
+\*                                                     */
+#parature_wrapper {
+    position : relative;
+    top      : 130px;
+    width    : 950px;
+    margin   : auto;
+}
+
+#helpLayer {
+}
+
+#parature_navigation {
+    position  : absolute;
+    top       : -11px;
+    font-size : 0.8em;
+    padding   : 0.25em;
+    right     : 0;
+}
+
+ul.mainmenu {
+    list-style : none;
+    float      : right;
+}
+
+ul.utilitymenu {
+}
+
+.submenu {
+}
+
+.knowledge_main {
+}
+
+ul.submenu.knowledge_main {
+}
+
+#welcome {
+}
+
+#parature_search {
+    position : absolute;
+    top      : 18px;
+    right    : 0;
+}
+
+form#search {
+    width      : 460px;
+    height     : 36px;
+    background : url(https://www.parature.com/landing/supportportal/search-box.gif) no-repeat;
+    overflow   : hidden;
+}
+
+form#search input {
+    float      : left;
+    border     : none;
+    background : none;
+}
+
+form#search input.searchText {
+    font-weight : bold;
+    font-size   : 1.8em;
+    line-height : 25px;
+    height      : 25px;
+    margin      : 5px 8px 0px 6px;
+    display     : inline;
+    width       : 350px;
+    color       : #666;
+}
+
+form#search input.button {
+    width       : 94px;
+    height      : 36px;
+    cursor      : pointer;
+    font-size   : 0;
+    line-height : 0;
+    text-indent : -9999px;
+    overflow    : hidden;
+}
+
+a.searchLinks {
+}
+
+#parature_content {
+    position : absolute;
+    top      : 34px;
+    width: 640px;
+}
+
+#breadcrumbs {
+    position : absolute;
+    top      : 230px
+
+}
+
+h1.title {
+}
+
+#kbutility {
+}
+
+#articleAnswer {
+}
+
+#ratingContent {
+}
+
+#relatedTopics {
+}
+
+#treeView {
+}
+
+#poweredby {
+    display : none;
+}
+
+#parature_footer {
+    display : none;
+}

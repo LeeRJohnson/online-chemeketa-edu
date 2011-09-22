@@ -1,0 +1,3121 @@
+﻿/*-------------------------------------------------------------------
+FlavIcon CSS Framework Plug-in (Version 0.8) 
+Created by Lee R. Johnson (http://design.leerjohnson.com/ )
+
+Based on some CSS created for http://online.chemeketa.edu/
+to add icons through CSS instead of img tags at 
+    (http://online.chemeketa.edu/faculty/LMSReview/)done 2009-03-02)
+
+First based on the free icon set "Flavour" created by
+Oliver Twardowsk (http://www.addictedtocoffee.de/).
+Available at:
+    (http://www.smashingmagazine.com/2009/01/23/
+friday-freebies-flavours-icon-set-and-cute-tweeters-icon-set/)
+
+v0.8 (Only intended for use with existing Chemeketa Site Design)
+Udated 2009-03-02: 
+ * ADDED: Right positioning of icon
+ * ADDED: ico base icon class
+ * DEPRECATE: Parent hd based icon
+ * TODO: Make stand alone folder version
+
+--------------------------------------------------------------------- */
+
+/* Generic base icon class.  
+--------------------------------------------------------------------- */
+
+/* Defaults for ico class. Left of content and generic web icon */
+.ico {
+    Xdisplay: block; /* based on original size 48px of flavour pngs */
+    padding-left: 56px;
+    min-width: 14px;
+    min-height: 50px;
+    background: transparent url(//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/applications.png) no-repeat scroll left 0;
+}
+
+h1.ico, h2.ico, h3.ico, h4.ico, h5.ico, h6.ico {
+    background-position: left top;
+}
+
+dl.ico, dt.ico, dd.ico, ol.ico, ul.ico, li.ico, fieldset.ico, p.ico, blockquote.ico {
+    background-position: center;
+}
+
+pre.ico, a.ico, abbr.ico, acronym.ico, address.ico,
+code.ico, del.ico, dfn.ico, em.ico, img.ico, q.ico, label.ico,
+captionico.ico, strong.ico {
+    display: inline-block;
+    margin: 0;
+}
+
+p .ico {
+    display: inline-block;
+    float: left;
+    width: auto;
+    line-height: inherit;
+}
+
+button.ico, .button.ico {
+    min-height: 50px;
+    display: inline-block;
+}
+
+.ico.right {
+    padding-right: 56px;
+    padding-left: 0px;
+    background-position: right;
+}
+
+p .ico.right {
+    float: right;
+}
+
+.ico.top {
+    padding-top: 56px;
+    padding-left: 0px;
+    background-position: right;
+}
+
+p .ico.top {
+    float: none;
+    position: relative;
+    top: 0px;
+}
+
+/*  Flavour Webicons Classes (Compressed)
+--------------------------------------------------------------------- */
+.ico.fi-32bit{
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/32bit.png');
+}
+
+.ico.fi-64bit{
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/64bit.png');
+}
+
+.ico.fi-addressbook, .ico.addressbook {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/addressbook.png');
+}
+
+.ico.fi-addressbook_user, .ico.addressbook_user {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/addressbook_user.png');
+}
+
+.ico.fi-apple-script, .ico.apple-script {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/apple-script.png');
+}
+
+.ico.fi-applications, .ico.applications {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/applications.png');
+}
+
+.ico.fi-audio_notification, .ico.audio_notification {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/audio_notification.png');
+}
+
+.ico.fi-badge_3g, .ico.badge_3g {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/badge_3g.png');
+}
+
+.ico.fi-badge_edge, .ico.badge_edge {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/badge_edge.png');
+}
+
+.ico.fi-badge_gprs, .ico.badge_gprs {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/badge_gprs.png');
+}
+
+.ico.fi-badge_umts, .ico.badge_umts {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/badge_umts.png');
+}
+
+.ico.fi-badge_wifi, .ico.badge_wifi {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/badge_wifi.png');
+}
+
+.ico.fi-battery_10percent, .ico.battery_10percent {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_10percent.png');
+}
+
+.ico.fi-battery_20percent, .ico.battery_20percent {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_20percent.png');
+}
+
+.ico.fi-battery_40percent, .ico.battery_40percent {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_40percent.png');
+}
+
+.ico.fi-battery_60percent, .ico.battery_60percent {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_60percent.png');
+}
+
+.ico.fi-battery_80percent, .ico.battery_80percent {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_80percent.png');
+}
+
+.ico.fi-battery_charging, .ico.battery_charging {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_charging.png');
+}
+
+.ico.fi-battery_empty, .ico.battery_empty {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_empty.png');
+}
+
+.ico.fi-battery_full, .ico.battery_full {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_full.png');
+}
+
+.ico.fi-battery_horizontal_10percent, .ico.battery_horizontal_10percent {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_horizontal_10percent.png');
+}
+
+.ico.fi-battery_horizontal_20percent, .ico.battery_horizontal_20percent {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_horizontal_20percent.png');
+}
+
+.ico.fi-battery_horizontal_40percent, .ico.battery_horizontal_40percent {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_horizontal_40percent.png');
+}
+
+.ico.fi-battery_horizontal_60percent, .ico.battery_horizontal_60percent {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_horizontal_60percent.png');
+}
+
+.ico.fi-battery_horizontal_80percent, .ico.battery_horizontal_80percent {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_horizontal_80percent.png');
+}
+
+.ico.fi-battery_horizontal_charging, .ico.battery_horizontal_charging {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_horizontal_charging.png');
+}
+
+.ico.fi-battery_horizontal_empty, .ico.battery_horizontal_empty {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_horizontal_empty.png');
+}
+
+.ico.fi-battery_horizontal_full, .ico.battery_horizontal_full {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_horizontal_full.png');
+}
+
+.ico.fi-battery_horizontal_plugged_in, .ico.battery_horizontal_plugged_in {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_horizontal_plugged_in.png');
+}
+
+.ico.fi-battery_pluged_in, .ico.battery_pluged_in {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/battery_pluged_in.png');
+}
+
+.ico.fi-beer, .ico.beer {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/beer.png');
+}
+
+.ico.fi-bible, .ico.bible {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/bible.png');
+}
+
+.ico.fi-bomb, .ico.bomb {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/bomb.png');
+}
+
+.ico.fi-box_address, .ico.box_address {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/box_address.png');
+}
+
+.ico.fi-box_download, .ico.box_download {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/box_download.png');
+}
+
+.ico.fi-box_fragile, .ico.box_fragile {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/box_fragile.png');
+}
+
+.ico.fi-box_rar, .ico.box_rar {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/box_rar.png');
+}
+
+.ico.fi-box_zip, .ico.box_zip {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/box_zip.png');
+}
+
+.ico.fi-brainstorming, .ico.brainstorming {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/brainstorming.png');
+}
+
+.ico.fi-brainstorming_alternative, .ico.brainstorming_alternative {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/brainstorming_alternative.png');
+}
+
+.ico.fi-browser, .ico.browser {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/browser.png');
+}
+
+.ico.fi-burning, .ico.burning {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/burning.png');
+}
+
+.ico.fi-button_blue_add, .ico.button_blue_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_blue_add.png');
+}
+
+.ico.fi-button_blue_close, .ico.button_blue_close {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_blue_close.png');
+}
+
+.ico.fi-button_blue_delete, .ico.button_blue_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_blue_delete.png');
+}
+
+.ico.fi-button_blue_fastforward, .ico.button_blue_fastforward {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_blue_fastforward.png');
+}
+
+.ico.fi-button_blue_heart, .ico.button_blue_heart {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_blue_heart.png');
+}
+
+.ico.fi-button_blue_pause, .ico.button_blue_pause {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_blue_pause.png');
+}
+
+.ico.fi-button_blue_play, .ico.button_blue_play {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_blue_play.png');
+}
+
+.ico.fi-button_blue_record, .ico.button_blue_record {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_blue_record.png');
+}
+
+.ico.fi-button_blue_rewind, .ico.button_blue_rewind {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_blue_rewind.png');
+}
+
+.ico.fi-button_blue_stop, .ico.button_blue_stop {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_blue_stop.png');
+}
+
+.ico.fi-button_delete_blue, .ico.button_delete_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_delete_blue.png');
+}
+
+.ico.fi-button_delete_green, .ico.button_delete_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_delete_green.png');
+}
+
+.ico.fi-button_delete_pink, .ico.button_delete_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_delete_pink.png');
+}
+
+.ico.fi-button_delete_red, .ico.button_delete_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_delete_red.png');
+}
+
+.ico.fi-button_delete_violet, .ico.button_delete_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_delete_violet.png');
+}
+
+.ico.fi-button_fastforward_blue, .ico.button_fastforward_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_fastforward_blue.png');
+}
+
+.ico.fi-button_fastforward_green, .ico.button_fastforward_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_fastforward_green.png');
+}
+
+.ico.fi-button_fastforward_pink, .ico.button_fastforward_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_fastforward_pink.png');
+}
+
+.ico.fi-button_fastforward_red, .ico.button_fastforward_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_fastforward_red.png');
+}
+
+.ico.fi-button_fastforward_violet, .ico.button_fastforward_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_fastforward_violet.png');
+}
+
+.ico.fi-button_green_add, .ico.button_green_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_green_add.png');
+}
+
+.ico.fi-button_green_close, .ico.button_green_close {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_green_close.png');
+}
+
+.ico.fi-button_green_delete, .ico.button_green_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_green_delete.png');
+}
+
+.ico.fi-button_green_fastforward, .ico.button_green_fastforward {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_green_fastforward.png');
+}
+
+.ico.fi-button_green_heart, .ico.button_green_heart {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_green_heart.png');
+}
+
+.ico.fi-button_green_pause, .ico.button_green_pause {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_green_pause.png');
+}
+
+.ico.fi-button_green_play, .ico.button_green_play {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_green_play.png');
+}
+
+.ico.fi-button_green_record, .ico.button_green_record {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_green_record.png');
+}
+
+.ico.fi-button_green_rewind, .ico.button_green_rewind {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_green_rewind.png');
+}
+
+.ico.fi-button_green_stop, .ico.button_green_stop {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_green_stop.png');
+}
+
+.ico.fi-button_grey_add, .ico.button_grey_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_grey_add.png');
+}
+
+.ico.fi-button_grey_close, .ico.button_grey_close {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_grey_close.png');
+}
+
+.ico.fi-button_grey_delete, .ico.button_grey_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_grey_delete.png');
+}
+
+.ico.fi-button_grey_fastforward, .ico.button_grey_fastforward {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_grey_fastforward.png');
+}
+
+.ico.fi-button_grey_heart, .ico.button_grey_heart {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_grey_heart.png');
+}
+
+.ico.fi-button_grey_pause, .ico.button_grey_pause {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_grey_pause.png');
+}
+
+.ico.fi-button_grey_play, .ico.button_grey_play {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_grey_play.png');
+}
+
+.ico.fi-button_grey_record, .ico.button_grey_record {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_grey_record.png');
+}
+
+.ico.fi-button_grey_rewind, .ico.button_grey_rewind {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_grey_rewind.png');
+}
+
+.ico.fi-button_grey_stop, .ico.button_grey_stop {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_grey_stop.png');
+}
+
+.ico.fi-button_heart_blue, .ico.button_heart_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_heart_blue.png');
+}
+
+.ico.fi-button_heart_green, .ico.button_heart_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_heart_green.png');
+}
+
+.ico.fi-button_heart_pink, .ico.button_heart_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_heart_pink.png');
+}
+
+.ico.fi-button_heart_red, .ico.button_heart_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_heart_red.png');
+}
+
+.ico.fi-button_heart_violet, .ico.button_heart_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_heart_violet.png');
+}
+
+.ico.fi-button_minus_blue, .ico.button_minus_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_minus_blue.png');
+}
+
+.ico.fi-button_minus_green, .ico.button_minus_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_minus_green.png');
+}
+
+.ico.fi-button_minus_pink, .ico.button_minus_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_minus_pink.png');
+}
+
+.ico.fi-button_minus_red, .ico.button_minus_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_minus_red.png');
+}
+
+.ico.fi-button_minus_violet, .ico.button_minus_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_minus_violet.png');
+}
+
+.ico.fi-button_pause_blue, .ico.button_pause_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pause_blue.png');
+}
+
+.ico.fi-button_pause_green, .ico.button_pause_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pause_green.png');
+}
+
+.ico.fi-button_pause_pink, .ico.button_pause_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pause_pink.png');
+}
+
+.ico.fi-button_pause_red, .ico.button_pause_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pause_red.png');
+}
+
+.ico.fi-button_pause_violet, .ico.button_pause_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pause_violet.png');
+}
+
+.ico.fi-button_pink_add, .ico.button_pink_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pink_add.png');
+}
+
+.ico.fi-button_pink_close, .ico.button_pink_close {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pink_close.png');
+}
+
+.ico.fi-button_pink_delete, .ico.button_pink_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pink_delete.png');
+}
+
+.ico.fi-button_pink_fastforward, .ico.button_pink_fastforward {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pink_fastforward.png');
+}
+
+.ico.fi-button_pink_heart, .ico.button_pink_heart {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pink_heart.png');
+}
+
+.ico.fi-button_pink_pause, .ico.button_pink_pause {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pink_pause.png');
+}
+
+.ico.fi-button_pink_play, .ico.button_pink_play {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pink_play.png');
+}
+
+.ico.fi-button_pink_record, .ico.button_pink_record {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pink_record.png');
+}
+
+.ico.fi-button_pink_rewind, .ico.button_pink_rewind {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pink_rewind.png');
+}
+
+.ico.fi-button_pink_stop, .ico.button_pink_stop {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_pink_stop.png');
+}
+
+.ico.fi-button_play_blue, .ico.button_play_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_play_blue.png');
+}
+
+.ico.fi-button_play_green, .ico.button_play_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_play_green.png');
+}
+
+.ico.fi-button_play_pink, .ico.button_play_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_play_pink.png');
+}
+
+.ico.fi-button_play_red, .ico.button_play_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_play_red.png');
+}
+
+.ico.fi-button_play_violet, .ico.button_play_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_play_violet.png');
+}
+
+.ico.fi-button_plus_blue, .ico.button_plus_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_plus_blue.png');
+}
+
+.ico.fi-button_plus_green, .ico.button_plus_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_plus_green.png');
+}
+
+.ico.fi-button_plus_pink, .ico.button_plus_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_plus_pink.png');
+}
+
+.ico.fi-button_plus_red, .ico.button_plus_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_plus_red.png');
+}
+
+.ico.fi-button_plus_violet, .ico.button_plus_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_plus_violet.png');
+}
+
+.ico.fi-button_record, .ico.button_record {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_record.png');
+}
+
+.ico.fi-button_red_add, .ico.button_red_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_red_add.png');
+}
+
+.ico.fi-button_red_close, .ico.button_red_close {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_red_close.png');
+}
+
+.ico.fi-button_red_delete, .ico.button_red_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_red_delete.png');
+}
+
+.ico.fi-button_red_fastforward, .ico.button_red_fastforward {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_red_fastforward.png');
+}
+
+.ico.fi-button_red_heart, .ico.button_red_heart {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_red_heart.png');
+}
+
+.ico.fi-button_red_pause, .ico.button_red_pause {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_red_pause.png');
+}
+
+.ico.fi-button_red_play, .ico.button_red_play {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_red_play.png');
+}
+
+.ico.fi-button_red_record, .ico.button_red_record {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_red_record.png');
+}
+
+.ico.fi-button_red_rewind, .ico.button_red_rewind {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_red_rewind.png');
+}
+
+.ico.fi-button_red_stop, .ico.button_red_stop {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_red_stop.png');
+}
+
+.ico.fi-button_rewind_blue, .ico.button_rewind_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_rewind_blue.png');
+}
+
+.ico.fi-button_rewind_green, .ico.button_rewind_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_rewind_green.png');
+}
+
+.ico.fi-button_rewind_pink, .ico.button_rewind_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_rewind_pink.png');
+}
+
+.ico.fi-button_rewind_red, .ico.button_rewind_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_rewind_red.png');
+}
+
+.ico.fi-button_rewind_violet, .ico.button_rewind_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_rewind_violet.png');
+}
+
+.ico.fi-button_stop_blue, .ico.button_stop_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_stop_blue.png');
+}
+
+.ico.fi-button_stop_green, .ico.button_stop_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_stop_green.png');
+}
+
+.ico.fi-button_stop_pink, .ico.button_stop_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_stop_pink.png');
+}
+
+.ico.fi-button_stop_red, .ico.button_stop_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_stop_red.png');
+}
+
+.ico.fi-button_stop_violet, .ico.button_stop_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_stop_violet.png');
+}
+
+.ico.fi-button_violet_add, .ico.button_violet_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_violet_add.png');
+}
+
+.ico.fi-button_violet_close, .ico.button_violet_close {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_violet_close.png');
+}
+
+.ico.fi-button_violet_delete, .ico.button_violet_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_violet_delete.png');
+}
+
+.ico.fi-button_violet_fastforward, .ico.button_violet_fastforward {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_violet_fastforward.png');
+}
+
+.ico.fi-button_violet_heart, .ico.button_violet_heart {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_violet_heart.png');
+}
+
+.ico.fi-button_violet_pause, .ico.button_violet_pause {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_violet_pause.png');
+}
+
+.ico.fi-button_violet_play, .ico.button_violet_play {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_violet_play.png');
+}
+
+.ico.fi-button_violet_record, .ico.button_violet_record {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_violet_record.png');
+}
+
+.ico.fi-button_violet_rewind, .ico.button_violet_rewind {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_violet_rewind.png');
+}
+
+.ico.fi-button_violet_stop, .ico.button_violet_stop {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/button_violet_stop.png');
+}
+
+.ico.fi-cake, .ico.cake {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cake.png');
+}
+
+.ico.fi-calc, .ico.calc {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/calc.png');
+}
+
+.ico.fi-calculator, .ico.calculator {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/calculator.png');
+}
+
+.ico.fi-case, .ico.case {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/case.png');
+}
+
+.ico.fi-cd, .ico.cd {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cd.png');
+}
+
+.ico.fi-cd_burning, .ico.cd_burning {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cd_burning.png');
+}
+
+.ico.fi-cd_burning_spectrum, .ico.cd_burning_spectrum {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cd_burning_spectrum.png');
+}
+
+.ico.fi-cd_spectrum, .ico.cd_spectrum {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cd_spectrum.png');
+}
+
+.ico.fi-chart, .ico.chart {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/chart.png');
+}
+
+.ico.fi-chart_pie, .ico.chart_pie {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/chart_pie.png');
+}
+
+.ico.fi-check, .ico.check {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/check.png');
+}
+
+.ico.fi-chrome, .ico.chrome {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/chrome.png');
+}
+
+.ico.fi-cialis, .ico.cialis {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cialis.png');
+}
+
+.ico.fi-cialis_professional, .ico.cialis_professional {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cialis_professional.png');
+}
+
+.ico.fi-clipboard, .ico.clipboard {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/clipboard.png');
+}
+
+.ico.fi-clipboard_add, .ico.clipboard_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/clipboard_add.png');
+}
+
+.ico.fi-clipboard_alert, .ico.clipboard_alert {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/clipboard_alert.png');
+}
+
+.ico.fi-clipboard_check, .ico.clipboard_check {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/clipboard_check.png');
+}
+
+.ico.fi-clipboard_cut, .ico.clipboard_cut {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/clipboard_cut.png');
+}
+
+.ico.fi-clipboard_delete, .ico.clipboard_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/clipboard_delete.png');
+}
+
+.ico.fi-clipboard_download, .ico.clipboard_download {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/clipboard_download.png');
+}
+
+.ico.fi-clipboard_full, .ico.clipboard_full {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/clipboard_full.png');
+}
+
+.ico.fi-clock, .ico.clock {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/clock.png');
+}
+
+.ico.fi-cloud, .ico.cloud {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cloud.png');
+}
+
+.ico.fi-cloud_add, .ico.cloud_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cloud_add.png');
+}
+
+.ico.fi-cloud_alert, .ico.cloud_alert {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cloud_alert.png');
+}
+
+.ico.fi-cloud_back, .ico.cloud_back {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cloud_back.png');
+}
+
+.ico.fi-cloud_backup, .ico.cloud_backup {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cloud_backup.png');
+}
+
+.ico.fi-cloud_check, .ico.cloud_check {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cloud_check.png');
+}
+
+.ico.fi-cloud_delete, .ico.cloud_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cloud_delete.png');
+}
+
+.ico.fi-cloud_download, .ico.cloud_download {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cloud_download.png');
+}
+
+.ico.fi-cloud_exchange, .ico.cloud_exchange {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cloud_exchange.png');
+}
+
+.ico.fi-cloud_forward, .ico.cloud_forward {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cloud_forward.png');
+}
+
+.ico.fi-cloud_upload, .ico.cloud_upload {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cloud_upload.png');
+}
+
+.ico.fi-coffee, .ico.coffee {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/coffee.png');
+}
+
+.ico.fi-coffee_to_go, .ico.coffee_to_go {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/coffee_to_go.png');
+}
+
+.ico.fi-color_wheel, .ico.color_wheel {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/color_wheel.png');
+}
+
+.ico.fi-comments, .ico.comments {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/comments.png');
+}
+
+.ico.fi-comments_add, .ico.comments_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/comments_add.png');
+}
+
+.ico.fi-comments_alert, .ico.comments_alert {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/comments_alert.png');
+}
+
+.ico.fi-comments_check, .ico.comments_check {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/comments_check.png');
+}
+
+.ico.fi-comments_count, .ico.comments_count {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/comments_count.png');
+}
+
+.ico.fi-comments_delete, .ico.comments_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/comments_delete.png');
+}
+
+.ico.fi-comments_reply, .ico.comments_reply {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/comments_reply.png');
+}
+
+.ico.fi-comments_report, .ico.comments_report {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/comments_report.png');
+}
+
+.ico.fi-compass, .ico.compass {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/compass.png');
+}
+
+.ico.fi-copy-document, .ico.copy-document {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/copy-document.png');
+}
+
+.ico.fi-creative_suite_acrobat, .ico.creative_suite_acrobat {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/creative_suite_acrobat.png');
+}
+
+.ico.fi-creative_suite_after_effects, .ico.creative_suite_after_effects {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/creative_suite_after_effects.png');
+}
+
+.ico.fi-creative_suite_bridge, .ico.creative_suite_bridge {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/creative_suite_bridge.png');
+}
+
+.ico.fi-creative_suite_dreamweaver, .ico.creative_suite_dreamweaver {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/creative_suite_dreamweaver.png');
+}
+
+.ico.fi-creative_suite_fireworks, .ico.creative_suite_fireworks {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/creative_suite_fireworks.png');
+}
+
+.ico.fi-creative_suite_flash, .ico.creative_suite_flash {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/creative_suite_flash.png');
+}
+
+.ico.fi-creative_suite_illustrator, .ico.creative_suite_illustrator {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/creative_suite_illustrator.png');
+}
+
+.ico.fi-creative_suite_indesign, .ico.creative_suite_indesign {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/creative_suite_indesign.png');
+}
+
+.ico.fi-creative_suite_photoshop, .ico.creative_suite_photoshop {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/creative_suite_photoshop.png');
+}
+
+.ico.fi-creative_suite_premiere, .ico.creative_suite_premiere {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/creative_suite_premiere.png');
+}
+
+.ico.fi-creative_suite_sound_booth, .ico.creative_suite_sound_booth {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/creative_suite_sound_booth.png');
+}
+
+.ico.fi-credit-card_amex_gold, .ico.credit-card_amex_gold {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_amex_gold.png');
+}
+
+.ico.fi-credit-card_amex_platinum, .ico.credit-card_amex_platinum {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_amex_platinum.png');
+}
+
+.ico.fi-credit-card_dinersclub_gold, .ico.credit-card_dinersclub_gold {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_dinersclub_gold.png');
+}
+
+.ico.fi-credit-card_dinersclub_platinum, .ico.credit-card_dinersclub_platinum {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_dinersclub_platinum.png');
+}
+
+.ico.fi-credit-card_gold_amex, .ico.credit-card_gold_amex {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_gold_amex.png');
+}
+
+.ico.fi-credit-card_gold_diners_club, .ico.credit-card_gold_diners_club {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_gold_diners_club.png');
+}
+
+.ico.fi-credit-card_gold_master_card, .ico.credit-card_gold_master_card {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_gold_master_card.png');
+}
+
+.ico.fi-credit-card_gold_paypal, .ico.credit-card_gold_paypal {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_gold_paypal.png');
+}
+
+.ico.fi-credit-card_gold_visa, .ico.credit-card_gold_visa {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_gold_visa.png');
+}
+
+.ico.fi-credit-card_mastercard_gold, .ico.credit-card_mastercard_gold {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_mastercard_gold.png');
+}
+
+.ico.fi-credit-card_mastercard_platinum, .ico.credit-card_mastercard_platinum {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_mastercard_platinum.png');
+}
+
+.ico.fi-credit-card_paypal_gold, .ico.credit-card_paypal_gold {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_paypal_gold.png');
+}
+
+.ico.fi-credit-card_paypal_platinum, .ico.credit-card_paypal_platinum {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_paypal_platinum.png');
+}
+
+.ico.fi-credit-card_platinum_amex, .ico.credit-card_platinum_amex {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_platinum_amex.png');
+}
+
+.ico.fi-credit-card_platinum_diners_club, .ico.credit-card_platinum_diners_club {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_platinum_diners_club.png');
+}
+
+.ico.fi-credit-card_platinum_master_card, .ico.credit-card_platinum_master_card {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_platinum_master_card.png');
+}
+
+.ico.fi-credit-card_platinum_paypal, .ico.credit-card_platinum_paypal {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_platinum_paypal.png');
+}
+
+.ico.fi-credit-card_platinum_via, .ico.credit-card_platinum_via {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_platinum_via.png');
+}
+
+.ico.fi-credit-card_visa_gold, .ico.credit-card_visa_gold {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_visa_gold.png');
+}
+
+.ico.fi-credit-card_visa_platinum, .ico.credit-card_visa_platinum {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/credit-card_visa_platinum.png');
+}
+
+.ico.fi-curriculum_vitae, .ico.curriculum_vitae {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/curriculum_vitae.png');
+}
+
+.ico.fi-cutting_pad, .ico.cutting_pad {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/cutting_pad.png');
+}
+
+.ico.fi-database, .ico.database {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/database.png');
+}
+
+.ico.fi-database_add, .ico.database_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/database_add.png');
+}
+
+.ico.fi-database_alert, .ico.database_alert {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/database_alert.png');
+}
+
+.ico.fi-database_check, .ico.database_check {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/database_check.png');
+}
+
+.ico.fi-database_delete, .ico.database_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/database_delete.png');
+}
+
+.ico.fi-database_download, .ico.database_download {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/database_download.png');
+}
+
+.ico.fi-delicious, .ico.delicious {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/delicious.png');
+}
+
+.ico.fi-desktop_addictedtocoffee, .ico.desktop_addictedtocoffee {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_addictedtocoffee.png');
+}
+
+.ico.fi-desktop_addicted_to_coffee, .ico.desktop_addicted_to_coffee {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_addicted_to_coffee.png');
+}
+
+.ico.fi-desktop_aqua, .ico.desktop_aqua {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_aqua.png');
+}
+
+.ico.fi-desktop_aqua_blue, .ico.desktop_aqua_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_aqua_blue.png');
+}
+
+.ico.fi-desktop_aurora_borealis, .ico.desktop_aurora_borealis {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_aurora_borealis.png');
+}
+
+.ico.fi-desktop_aurora_leopard, .ico.desktop_aurora_leopard {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_aurora_leopard.png');
+}
+
+.ico.fi-desktop_aurora_snow_leopard, .ico.desktop_aurora_snow_leopard {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_aurora_snow_leopard.png');
+}
+
+.ico.fi-desktop_blazeoflight, .ico.desktop_blazeoflight {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_blazeoflight.png');
+}
+
+.ico.fi-desktop_blaze_of_light, .ico.desktop_blaze_of_light {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_blaze_of_light.png');
+}
+
+.ico.fi-desktop_into_the_sun, .ico.desktop_into_the_sun {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_into_the_sun.png');
+}
+
+.ico.fi-desktop_lensflare, .ico.desktop_lensflare {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_lensflare.png');
+}
+
+.ico.fi-desktop_wallpapers_aqua, .ico.desktop_wallpapers_aqua {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_wallpapers_aqua.png');
+}
+
+.ico.fi-desktop_wallpapers_aurora, .ico.desktop_wallpapers_aurora {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/desktop_wallpapers_aurora.png');
+}
+
+.ico.fi-digg-technot, .ico.digg-technot {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/digg-technot.png');
+}
+
+.ico.fi-digg, .ico.digg {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/digg.png');
+}
+
+.ico.fi-digital-media-content, .ico.digital-media-content {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/digital-media-content.png');
+}
+
+.ico.fi-digital_camera, .ico.digital_camera {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/digital_camera.png');
+}
+
+.ico.fi-document-lined-pen, .ico.document-lined-pen {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/document-lined-pen.png');
+}
+
+.ico.fi-document-plaid-pen, .ico.document-plaid-pen {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/document-plaid-pen.png');
+}
+
+.ico.fi-document_blank, .ico.document_blank {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/document_blank.png');
+}
+
+.ico.fi-document_pen, .ico.document_pen {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/document_pen.png');
+}
+
+.ico.fi-emote_biggrin, .ico.emote_biggrin {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/emote_biggrin.png');
+}
+
+.ico.fi-emote_love, .ico.emote_love {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/emote_love.png');
+}
+
+.ico.fi-emote_nerd, .ico.emote_nerd {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/emote_nerd.png');
+}
+
+.ico.fi-emote_nerd_penholder, .ico.emote_nerd_penholder {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/emote_nerd_penholder.png');
+}
+
+.ico.fi-emote_sad, .ico.emote_sad {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/emote_sad.png');
+}
+
+.ico.fi-emote_smile, .ico.emote_smile {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/emote_smile.png');
+}
+
+.ico.fi-emote_wink, .ico.emote_wink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/emote_wink.png');
+}
+
+.ico.fi-emote_woohoooo, .ico.emote_woohoooo {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/emote_woohoooo.png');
+}
+
+.ico.fi-entry_add, .ico.entry_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/entry_add.png');
+}
+
+.ico.fi-entry_alert, .ico.entry_alert {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/entry_alert.png');
+}
+
+.ico.fi-entry_delete, .ico.entry_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/entry_delete.png');
+}
+
+.ico.fi-entry_preview, .ico.entry_preview {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/entry_preview.png');
+}
+
+.ico.fi-entry_save, .ico.entry_save {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/entry_save.png');
+}
+
+.ico.fi-entry_saved, .ico.entry_saved {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/entry_saved.png');
+}
+
+.ico.fi-eQ-project, .ico.eQ-project {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/eQ-project.png');
+}
+
+.ico.fi-fall_leaf, .ico.fall_leaf {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/fall_leaf.png');
+}
+
+.ico.fi-file_aac, .ico.file_aac {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_aac.png');
+}
+
+.ico.fi-file_ai, .ico.file_ai {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_ai.png');
+}
+
+.ico.fi-file_avi, .ico.file_avi {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_avi.png');
+}
+
+.ico.fi-file_bin, .ico.file_bin {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_bin.png');
+}
+
+.ico.fi-file_bmp, .ico.file_bmp {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_bmp.png');
+}
+
+.ico.fi-file_cue, .ico.file_cue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_cue.png');
+}
+
+.ico.fi-file_divx, .ico.file_divx {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_divx.png');
+}
+
+.ico.fi-file_doc, .ico.file_doc {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_doc.png');
+}
+
+.ico.fi-file_eps, .ico.file_eps {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_eps.png');
+}
+
+.ico.fi-file_flac, .ico.file_flac {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_flac.png');
+}
+
+.ico.fi-file_flv, .ico.file_flv {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_flv.png');
+}
+
+.ico.fi-file_gif, .ico.file_gif {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_gif.png');
+}
+
+.ico.fi-file_html, .ico.file_html {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_html.png');
+}
+
+.ico.fi-file_ical, .ico.file_ical {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_ical.png');
+}
+
+.ico.fi-file_indd, .ico.file_indd {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_indd.png');
+}
+
+.ico.fi-file_inx, .ico.file_inx {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_inx.png');
+}
+
+.ico.fi-file_iso, .ico.file_iso {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_iso.png');
+}
+
+.ico.fi-file_jpg, .ico.file_jpg {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_jpg.png');
+}
+
+.ico.fi-file_mov, .ico.file_mov {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_mov.png');
+}
+
+.ico.fi-file_mp3, .ico.file_mp3 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_mp3.png');
+}
+
+.ico.fi-file_mpg, .ico.file_mpg {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_mpg.png');
+}
+
+.ico.fi-file_pdf, .ico.file_pdf {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_pdf.png');
+}
+
+.ico.fi-file_php, .ico.file_php {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_php.png');
+}
+
+.ico.fi-file_png, .ico.file_png {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_png.png');
+}
+
+.ico.fi-file_pps, .ico.file_pps {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_pps.png');
+}
+
+.ico.fi-file_ppt, .ico.file_ppt {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_ppt.png');
+}
+
+.ico.fi-file_psd, .ico.file_psd {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_psd.png');
+}
+
+.ico.fi-file_qxd, .ico.file_qxd {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_qxd.png');
+}
+
+.ico.fi-file_qxp, .ico.file_qxp {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_qxp.png');
+}
+
+.ico.fi-file_raw, .ico.file_raw {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_raw.png');
+}
+
+.ico.fi-file_rtf, .ico.file_rtf {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_rtf.png');
+}
+
+.ico.fi-file_svg, .ico.file_svg {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_svg.png');
+}
+
+.ico.fi-file_swf, .ico.file_swf {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_swf.png');
+}
+
+.ico.fi-file_tif, .ico.file_tif {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_tif.png');
+}
+
+.ico.fi-file_txt, .ico.file_txt {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_txt.png');
+}
+
+.ico.fi-file_types, .ico.file_types {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_types.png');
+}
+
+.ico.fi-file_vcf, .ico.file_vcf {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_vcf.png');
+}
+
+.ico.fi-file_wav, .ico.file_wav {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_wav.png');
+}
+
+.ico.fi-file_wma, .ico.file_wma {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_wma.png');
+}
+
+.ico.fi-file_xls, .ico.file_xls {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_xls.png');
+}
+
+.ico.fi-file_xml, .ico.file_xml {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/file_xml.png');
+}
+
+.ico.fi-firefox, .ico.firefox {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/firefox.png');
+}
+
+.ico.fi-fit_width, .ico.fit_width {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/fit_width.png');
+}
+
+.ico.fi-flag_andorra, .ico.flag_andorra {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_andorra.png');
+}
+
+.ico.fi-flag_argentina, .ico.flag_argentina {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_argentina.png');
+}
+
+.ico.fi-flag_australia, .ico.flag_australia {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_australia.png');
+}
+
+.ico.fi-flag_austria, .ico.flag_austria {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_austria.png');
+}
+
+.ico.fi-flag_belgium, .ico.flag_belgium {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_belgium.png');
+}
+
+.ico.fi-flag_botswana, .ico.flag_botswana {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_botswana.png');
+}
+
+.ico.fi-flag_brasil, .ico.flag_brasil {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_brasil.png');
+}
+
+.ico.fi-flag_bulgaria, .ico.flag_bulgaria {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_bulgaria.png');
+}
+
+.ico.fi-flag_cameroon, .ico.flag_cameroon {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_cameroon.png');
+}
+
+.ico.fi-flag_canada, .ico.flag_canada {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_canada.png');
+}
+
+.ico.fi-flag_central_african_republic, .ico.flag_central_african_republic {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_central_african_republic.png');
+}
+
+.ico.fi-flag_chile, .ico.flag_chile {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_chile.png');
+}
+
+.ico.fi-flag_china, .ico.flag_china {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_china.png');
+}
+
+.ico.fi-flag_colombia, .ico.flag_colombia {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_colombia.png');
+}
+
+.ico.fi-flag_croatia, .ico.flag_croatia {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_croatia.png');
+}
+
+.ico.fi-flag_czech_republic, .ico.flag_czech_republic {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_czech_republic.png');
+}
+
+.ico.fi-flag_denmark, .ico.flag_denmark {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_denmark.png');
+}
+
+.ico.fi-flag_dominican_republic, .ico.flag_dominican_republic {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_dominican_republic.png');
+}
+
+.ico.fi-flag_ecuador, .ico.flag_ecuador {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_ecuador.png');
+}
+
+.ico.fi-flag_egypt, .ico.flag_egypt {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_egypt.png');
+}
+
+.ico.fi-flag_el_salvador, .ico.flag_el_salvador {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_el_salvador.png');
+}
+
+.ico.fi-flag_equatorial_guinea, .ico.flag_equatorial_guinea {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_equatorial_guinea.png');
+}
+
+.ico.fi-flag_estonia, .ico.flag_estonia {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_estonia.png');
+}
+
+.ico.fi-flag_european_union, .ico.flag_european_union {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_european_union.png');
+}
+
+.ico.fi-flag_france, .ico.flag_france {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_france.png');
+}
+
+.ico.fi-flag_gay_pride, .ico.flag_gay_pride {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_gay_pride.png');
+}
+
+.ico.fi-flag_germany, .ico.flag_germany {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_germany.png');
+}
+
+.ico.fi-flag_greece, .ico.flag_greece {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_greece.png');
+}
+
+.ico.fi-flag_guatemala, .ico.flag_guatemala {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_guatemala.png');
+}
+
+.ico.fi-flag_guinea-bissau, .ico.flag_guinea-bissau {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_guinea-bissau.png');
+}
+
+.ico.fi-flag_guinea, .ico.flag_guinea {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_guinea.png');
+}
+
+.ico.fi-flag_honduras, .ico.flag_honduras {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_honduras.png');
+}
+
+.ico.fi-flag_hong_kong, .ico.flag_hong_kong {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_hong_kong.png');
+}
+
+.ico.fi-flag_hungary, .ico.flag_hungary {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_hungary.png');
+}
+
+.ico.fi-flag_india, .ico.flag_india {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_india.png');
+}
+
+.ico.fi-flag_indonesia, .ico.flag_indonesia {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_indonesia.png');
+}
+
+.ico.fi-flag_ireland, .ico.flag_ireland {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_ireland.png');
+}
+
+.ico.fi-flag_israel, .ico.flag_israel {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_israel.png');
+}
+
+.ico.fi-flag_italy, .ico.flag_italy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_italy.png');
+}
+
+.ico.fi-flag_ivory_coast, .ico.flag_ivory_coast {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_ivory_coast.png');
+}
+
+.ico.fi-flag_jamaica, .ico.flag_jamaica {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_jamaica.png');
+}
+
+.ico.fi-flag_japan, .ico.flag_japan {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_japan.png');
+}
+
+.ico.fi-flag_jordan, .ico.flag_jordan {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_jordan.png');
+}
+
+.ico.fi-flag_kenya, .ico.flag_kenya {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_kenya.png');
+}
+
+.ico.fi-flag_korea, .ico.flag_korea {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_korea.png');
+}
+
+.ico.fi-flag_latvia, .ico.flag_latvia {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_latvia.png');
+}
+
+.ico.fi-flag_liechtenstein, .ico.flag_liechtenstein {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_liechtenstein.png');
+}
+
+.ico.fi-flag_lithuania, .ico.flag_lithuania {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_lithuania.png');
+}
+
+.ico.fi-flag_luxembourg, .ico.flag_luxembourg {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_luxembourg.png');
+}
+
+.ico.fi-flag_macau, .ico.flag_macau {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_macau.png');
+}
+
+.ico.fi-flag_macedonia, .ico.flag_macedonia {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_macedonia.png');
+}
+
+.ico.fi-flag_madagascar, .ico.flag_madagascar {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_madagascar.png');
+}
+
+.ico.fi-flag_malaysia, .ico.flag_malaysia {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_malaysia.png');
+}
+
+.ico.fi-flag_mali, .ico.flag_mali {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_mali.png');
+}
+
+.ico.fi-flag_malta, .ico.flag_malta {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_malta.png');
+}
+
+.ico.fi-flag_mauritius, .ico.flag_mauritius {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_mauritius.png');
+}
+
+.ico.fi-flag_mexico, .ico.flag_mexico {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_mexico.png');
+}
+
+.ico.fi-flag_moldova, .ico.flag_moldova {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_moldova.png');
+}
+
+.ico.fi-flag_monaco, .ico.flag_monaco {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_monaco.png');
+}
+
+.ico.fi-flag_montenegro, .ico.flag_montenegro {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_montenegro.png');
+}
+
+.ico.fi-flag_netherlands, .ico.flag_netherlands {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_netherlands.png');
+}
+
+.ico.fi-flag_new_zealand, .ico.flag_new_zealand {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_new_zealand.png');
+}
+
+.ico.fi-flag_nicaragua, .ico.flag_nicaragua {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_nicaragua.png');
+}
+
+.ico.fi-flag_niger, .ico.flag_niger {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_niger.png');
+}
+
+.ico.fi-flag_norway, .ico.flag_norway {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_norway.png');
+}
+
+.ico.fi-flag_panama, .ico.flag_panama {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_panama.png');
+}
+
+.ico.fi-flag_paraguay, .ico.flag_paraguay {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_paraguay.png');
+}
+
+.ico.fi-flag_peru, .ico.flag_peru {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_peru.png');
+}
+
+.ico.fi-flag_phillippines, .ico.flag_phillippines {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_phillippines.png');
+}
+
+.ico.fi-flag_poland, .ico.flag_poland {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_poland.png');
+}
+
+.ico.fi-flag_portugal, .ico.flag_portugal {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_portugal.png');
+}
+
+.ico.fi-flag_puerto_rico, .ico.flag_puerto_rico {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_puerto_rico.png');
+}
+
+.ico.fi-flag_qatar, .ico.flag_qatar {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_qatar.png');
+}
+
+.ico.fi-flag_romania, .ico.flag_romania {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_romania.png');
+}
+
+.ico.fi-flag_russia, .ico.flag_russia {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_russia.png');
+}
+
+.ico.fi-flag_saudi_arabia, .ico.flag_saudi_arabia {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_saudi_arabia.png');
+}
+
+.ico.fi-flag_senegal, .ico.flag_senegal {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_senegal.png');
+}
+
+.ico.fi-flag_singapore, .ico.flag_singapore {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_singapore.png');
+}
+
+.ico.fi-flag_slovakia, .ico.flag_slovakia {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_slovakia.png');
+}
+
+.ico.fi-flag_south_africa, .ico.flag_south_africa {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_south_africa.png');
+}
+
+.ico.fi-flag_spain, .ico.flag_spain {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_spain.png');
+}
+
+.ico.fi-flag_suomi, .ico.flag_suomi {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_suomi.png');
+}
+
+.ico.fi-flag_sweden, .ico.flag_sweden {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_sweden.png');
+}
+
+.ico.fi-flag_switzerland, .ico.flag_switzerland {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_switzerland.png');
+}
+
+.ico.fi-flag_taiwan, .ico.flag_taiwan {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_taiwan.png');
+}
+
+.ico.fi-flag_thailand, .ico.flag_thailand {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_thailand.png');
+}
+
+.ico.fi-flag_turkey, .ico.flag_turkey {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_turkey.png');
+}
+
+.ico.fi-flag_united_arab_emirates, .ico.flag_united_arab_emirates {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_united_arab_emirates.png');
+}
+
+.ico.fi-flag_united_kingdom, .ico.flag_united_kingdom {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_united_kingdom.png');
+}
+
+.ico.fi-flag_uruguay, .ico.flag_uruguay {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_uruguay.png');
+}
+
+.ico.fi-flag_usa, .ico.flag_usa {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_usa.png');
+}
+
+.ico.fi-flag_vatican, .ico.flag_vatican {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_vatican.png');
+}
+
+.ico.fi-flag_venezuela, .ico.flag_venezuela {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_venezuela.png');
+}
+
+.ico.fi-flag_vietnam, .ico.flag_vietnam {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flag_vietnam.png');
+}
+
+.ico.fi-flickr, .ico.flickr {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/flickr.png');
+}
+
+.ico.fi-floppy-disk, .ico.floppy-disk {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/floppy-disk.png');
+}
+
+.ico.fi-floppy-disk_dos, .ico.floppy-disk_dos {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/floppy-disk_dos.png');
+}
+
+.ico.fi-folder_blue, .ico.folder_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_blue.png');
+}
+
+.ico.fi-folder_blue_backup, .ico.folder_blue_backup {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_blue_backup.png');
+}
+
+.ico.fi-folder_blue_conversations, .ico.folder_blue_conversations {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_blue_conversations.png');
+}
+
+.ico.fi-folder_blue_favorites, .ico.folder_blue_favorites {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_blue_favorites.png');
+}
+
+.ico.fi-folder_blue_ideas, .ico.folder_blue_ideas {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_blue_ideas.png');
+}
+
+.ico.fi-folder_blue_mails, .ico.folder_blue_mails {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_blue_mails.png');
+}
+
+.ico.fi-folder_blue_music, .ico.folder_blue_music {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_blue_music.png');
+}
+
+.ico.fi-folder_blue_stuffed, .ico.folder_blue_stuffed {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_blue_stuffed.png');
+}
+
+.ico.fi-folder_blue_todos, .ico.folder_blue_todos {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_blue_todos.png');
+}
+
+.ico.fi-folder_green, .ico.folder_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_green.png');
+}
+
+.ico.fi-folder_green_backup, .ico.folder_green_backup {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_green_backup.png');
+}
+
+.ico.fi-folder_green_conversations, .ico.folder_green_conversations {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_green_conversations.png');
+}
+
+.ico.fi-folder_green_favorites, .ico.folder_green_favorites {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_green_favorites.png');
+}
+
+.ico.fi-folder_green_ideas, .ico.folder_green_ideas {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_green_ideas.png');
+}
+
+.ico.fi-folder_green_mails, .ico.folder_green_mails {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_green_mails.png');
+}
+
+.ico.fi-folder_green_music, .ico.folder_green_music {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_green_music.png');
+}
+
+.ico.fi-folder_green_stuffed, .ico.folder_green_stuffed {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_green_stuffed.png');
+}
+
+.ico.fi-folder_green_todos, .ico.folder_green_todos {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_green_todos.png');
+}
+
+.ico.fi-folder_pink, .ico.folder_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_pink.png');
+}
+
+.ico.fi-folder_pink_backup, .ico.folder_pink_backup {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_pink_backup.png');
+}
+
+.ico.fi-folder_pink_conversations, .ico.folder_pink_conversations {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_pink_conversations.png');
+}
+
+.ico.fi-folder_pink_favorites, .ico.folder_pink_favorites {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_pink_favorites.png');
+}
+
+.ico.fi-folder_pink_ideas, .ico.folder_pink_ideas {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_pink_ideas.png');
+}
+
+.ico.fi-folder_pink_mails, .ico.folder_pink_mails {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_pink_mails.png');
+}
+
+.ico.fi-folder_pink_music, .ico.folder_pink_music {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_pink_music.png');
+}
+
+.ico.fi-folder_pink_stuffed, .ico.folder_pink_stuffed {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_pink_stuffed.png');
+}
+
+.ico.fi-folder_pink_todos, .ico.folder_pink_todos {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_pink_todos.png');
+}
+
+.ico.fi-folder_red, .ico.folder_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_red.png');
+}
+
+.ico.fi-folder_red_backup, .ico.folder_red_backup {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_red_backup.png');
+}
+
+.ico.fi-folder_red_conversations, .ico.folder_red_conversations {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_red_conversations.png');
+}
+
+.ico.fi-folder_red_favorites, .ico.folder_red_favorites {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_red_favorites.png');
+}
+
+.ico.fi-folder_red_ideas, .ico.folder_red_ideas {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_red_ideas.png');
+}
+
+.ico.fi-folder_red_mails, .ico.folder_red_mails {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_red_mails.png');
+}
+
+.ico.fi-folder_red_music, .ico.folder_red_music {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_red_music.png');
+}
+
+.ico.fi-folder_red_stuffed, .ico.folder_red_stuffed {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_red_stuffed.png');
+}
+
+.ico.fi-folder_red_todos, .ico.folder_red_todos {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_red_todos.png');
+}
+
+.ico.fi-folder_remote_backup_blue, .ico.folder_remote_backup_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_remote_backup_blue.png');
+}
+
+.ico.fi-folder_remote_backup_green, .ico.folder_remote_backup_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_remote_backup_green.png');
+}
+
+.ico.fi-folder_remote_backup_pink, .ico.folder_remote_backup_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_remote_backup_pink.png');
+}
+
+.ico.fi-folder_remote_backup_red, .ico.folder_remote_backup_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_remote_backup_red.png');
+}
+
+.ico.fi-folder_remote_backup_violet, .ico.folder_remote_backup_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_remote_backup_violet.png');
+}
+
+.ico.fi-folder_remote_blue, .ico.folder_remote_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_remote_blue.png');
+}
+
+.ico.fi-folder_remote_green, .ico.folder_remote_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_remote_green.png');
+}
+
+.ico.fi-folder_remote_pink, .ico.folder_remote_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_remote_pink.png');
+}
+
+.ico.fi-folder_remote_red, .ico.folder_remote_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_remote_red.png');
+}
+
+.ico.fi-folder_remote_violet, .ico.folder_remote_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_remote_violet.png');
+}
+
+.ico.fi-folder_violet, .ico.folder_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_violet.png');
+}
+
+.ico.fi-folder_violet_backup, .ico.folder_violet_backup {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_violet_backup.png');
+}
+
+.ico.fi-folder_violet_conversations, .ico.folder_violet_conversations {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_violet_conversations.png');
+}
+
+.ico.fi-folder_violet_favorites, .ico.folder_violet_favorites {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_violet_favorites.png');
+}
+
+.ico.fi-folder_violet_ideas, .ico.folder_violet_ideas {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_violet_ideas.png');
+}
+
+.ico.fi-folder_violet_mails, .ico.folder_violet_mails {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_violet_mails.png');
+}
+
+.ico.fi-folder_violet_music, .ico.folder_violet_music {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_violet_music.png');
+}
+
+.ico.fi-folder_violet_stuffed, .ico.folder_violet_stuffed {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_violet_stuffed.png');
+}
+
+.ico.fi-folder_violet_todos, .ico.folder_violet_todos {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/folder_violet_todos.png');
+}
+
+.ico.fi-fullscreen, .ico.fullscreen {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/fullscreen.png');
+}
+
+.ico.fi-game_controller, .ico.game_controller {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/game_controller.png');
+}
+
+.ico.fi-gift, .ico.gift {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/gift.png');
+}
+
+.ico.fi-gmail, .ico.gmail {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/gmail.png');
+}
+
+.ico.fi-google, .ico.google {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/google.png');
+}
+
+.ico.fi-grass, .ico.grass {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/grass.png');
+}
+
+.ico.fi-guide-gold, .ico.guide-gold {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/guide-gold.png');
+}
+
+.ico.fi-guide-maroon, .ico.guide-maroon {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/guide-maroon.png');
+}
+
+.ico.fi-harddrive, .ico.harddrive {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/harddrive.png');
+}
+
+.ico.fi-heart_empty, .ico.heart_empty {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/heart_empty.png');
+}
+
+.ico.fi-heart_full, .ico.heart_full {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/heart_full.png');
+}
+
+.ico.fi-heart_half, .ico.heart_half {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/heart_half.png');
+}
+
+.ico.fi-ical, .ico.ical {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/ical.png');
+}
+
+.ico.fi-iconfinder, .ico.iconfinder {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/iconfinder.png');
+}
+
+.ico.fi-internet_explorer, .ico.internet_explorer {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/internet_explorer.png');
+}
+
+.ico.fi-invoice, .ico.invoice {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/invoice.png');
+}
+
+.ico.fi-iphone, .ico.iphone {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/iphone.png');
+}
+
+.ico.fi-ipod_nano_blue, .ico.ipod_nano_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/ipod_nano_blue.png');
+}
+
+.ico.fi-ipod_nano_green, .ico.ipod_nano_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/ipod_nano_green.png');
+}
+
+.ico.fi-ipod_nano_orange, .ico.ipod_nano_orange {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/ipod_nano_orange.png');
+}
+
+.ico.fi-ipod_nano_pink, .ico.ipod_nano_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/ipod_nano_pink.png');
+}
+
+.ico.fi-ipod_nano_red, .ico.ipod_nano_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/ipod_nano_red.png');
+}
+
+.ico.fi-ipod_nano_silver, .ico.ipod_nano_silver {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/ipod_nano_silver.png');
+}
+
+.ico.fi-ipod_nano_violet, .ico.ipod_nano_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/ipod_nano_violet.png');
+}
+
+.ico.fi-jewel_case, .ico.jewel_case {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/jewel_case.png');
+}
+
+.ico.fi-jewel_case_international-pony, .ico.jewel_case_international-pony {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/jewel_case_international-pony.png');
+}
+
+.ico.fi-jewel_case_keane-under_the_iron_sea, .ico.jewel_case_keane-under_the_iron_sea {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/jewel_case_keane-under_the_iron_sea.png');
+}
+
+.ico.fi-jewel_case_linkin-park_reanimation, .ico.jewel_case_linkin-park_reanimation {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/jewel_case_linkin-park_reanimation.png');
+}
+
+.ico.fi-jewel_case_ministryofsound_annual2009, .ico.jewel_case_ministryofsound_annual2009 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/jewel_case_ministryofsound_annual2009.png');
+}
+
+.ico.fi-jewel_case_spectral, .ico.jewel_case_spectral {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/jewel_case_spectral.png');
+}
+
+.ico.fi-klappe, .ico.klappe {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/klappe.png');
+}
+
+.ico.fi-knife, .ico.knife {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/knife.png');
+}
+
+.ico.fi-knife_bloody, .ico.knife_bloody {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/knife_bloody.png');
+}
+
+.ico.fi-last-fm, .ico.last-fm {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/last-fm.png');
+}
+
+.ico.fi-lock_closed, .ico.lock_closed {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/lock_closed.png');
+}
+
+.ico.fi-lock_open, .ico.lock_open {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/lock_open.png');
+}
+
+.ico.fi-magic_mouse, .ico.magic_mouse {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/magic_mouse.png');
+}
+
+.ico.fi-magic_wand, .ico.magic_wand {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/magic_wand.png');
+}
+
+.ico.fi-mail_add, .ico.mail_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/mail_add.png');
+}
+
+.ico.fi-mail_alert, .ico.mail_alert {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/mail_alert.png');
+}
+
+.ico.fi-mail_check, .ico.mail_check {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/mail_check.png');
+}
+
+.ico.fi-mail_delete, .ico.mail_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/mail_delete.png');
+}
+
+.ico.fi-mail_download, .ico.mail_download {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/mail_download.png');
+}
+
+.ico.fi-mail_forward, .ico.mail_forward {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/mail_forward.png');
+}
+
+.ico.fi-mail_plain, .ico.mail_plain {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/mail_plain.png');
+}
+
+.ico.fi-mail_reply, .ico.mail_reply {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/mail_reply.png');
+}
+
+.ico.fi-mighty_mouse, .ico.mighty_mouse {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/mighty_mouse.png');
+}
+
+.ico.fi-moleskine_black, .ico.moleskine_black {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/moleskine_black.png');
+}
+
+.ico.fi-moleskine_red, .ico.moleskine_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/moleskine_red.png');
+}
+
+.ico.fi-money_1, .ico.money_1 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_1.png');
+}
+
+.ico.fi-money_10, .ico.money_10 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_10.png');
+}
+
+.ico.fi-money_100, .ico.money_100 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_100.png');
+}
+
+.ico.fi-money_100dollar, .ico.money_100dollar {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_100dollar.png');
+}
+
+.ico.fi-money_100dollar_Coins, .ico.money_100dollar_Coins {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_100dollar_Coins.png');
+}
+
+.ico.fi-money_100_coins, .ico.money_100_coins {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_100_coins.png');
+}
+
+.ico.fi-money_10dollar, .ico.money_10dollar {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_10dollar.png');
+}
+
+.ico.fi-money_10dollar_coins, .ico.money_10dollar_coins {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_10dollar_coins.png');
+}
+
+.ico.fi-money_10_coins, .ico.money_10_coins {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_10_coins.png');
+}
+
+.ico.fi-money_1dollar, .ico.money_1dollar {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_1dollar.png');
+}
+
+.ico.fi-money_1dollar_coins, .ico.money_1dollar_coins {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_1dollar_coins.png');
+}
+
+.ico.fi-money_1_coins, .ico.money_1_coins {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_1_coins.png');
+}
+
+.ico.fi-money_20, .ico.money_20 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_20.png');
+}
+
+.ico.fi-money_20_coins, .ico.money_20_coins {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_20_coins.png');
+}
+
+.ico.fi-money_5, .ico.money_5 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_5.png');
+}
+
+.ico.fi-money_50, .ico.money_50 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_50.png');
+}
+
+.ico.fi-money_50_coins, .ico.money_50_coins {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_50_coins.png');
+}
+
+.ico.fi-money_5_coins, .ico.money_5_coins {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/money_5_coins.png');
+}
+
+.ico.fi-monitor, .ico.monitor {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/monitor.png');
+}
+
+.ico.fi-opera, .ico.opera {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/opera.png');
+}
+
+.ico.fi-podcast, .ico.podcast {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/podcast.png');
+}
+
+.ico.fi-preferences, .ico.preferences {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/preferences.png');
+}
+
+.ico.fi-presentation, .ico.presentation {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/presentation.png');
+}
+
+.ico.fi-printer, .ico.printer {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/printer.png');
+}
+
+.ico.fi-qbic, .ico.qbic {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/qbic.png');
+}
+
+.ico.fi-qm, .ico.qm {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/qm.png');
+}
+
+.ico.fi-rss, .ico.rss {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/rss.png');
+}
+
+.ico.fi-rss_alternative, .ico.rss_alternative {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/rss_alternative.png');
+}
+
+.ico.fi-rss_circle, .ico.rss_circle {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/rss_circle.png');
+}
+
+.ico.fi-rss_circle_comments, .ico.rss_circle_comments {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/rss_circle_comments.png');
+}
+
+.ico.fi-rss_comments, .ico.rss_comments {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/rss_comments.png');
+}
+
+.ico.fi-rss_square, .ico.rss_square {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/rss_square.png');
+}
+
+.ico.fi-rss_square_comments, .ico.rss_square_comments {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/rss_square_comments.png');
+}
+
+.ico.fi-safari, .ico.safari {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/safari.png');
+}
+
+.ico.fi-screen_addicted-to-coffee, .ico.screen_addicted-to-coffee {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_addicted-to-coffee.png');
+}
+
+.ico.fi-screen_addicted-to-coffee_glossy, .ico.screen_addicted-to-coffee_glossy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_addicted-to-coffee_glossy.png');
+}
+
+.ico.fi-screen_addictedtocoffee, .ico.screen_addictedtocoffee {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_addictedtocoffee.png');
+}
+
+.ico.fi-screen_aqua, .ico.screen_aqua {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_aqua.png');
+}
+
+.ico.fi-screen_aqua_glossy, .ico.screen_aqua_glossy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_aqua_glossy.png');
+}
+
+.ico.fi-screen_aurora, .ico.screen_aurora {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_aurora.png');
+}
+
+.ico.fi-screen_aurora_leopard, .ico.screen_aurora_leopard {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_aurora_leopard.png');
+}
+
+.ico.fi-screen_aurora_leopard_glossy, .ico.screen_aurora_leopard_glossy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_aurora_leopard_glossy.png');
+}
+
+.ico.fi-screen_aurora_snowleopard, .ico.screen_aurora_snowleopard {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_aurora_snowleopard.png');
+}
+
+.ico.fi-screen_aurora_snowleopard_glossy, .ico.screen_aurora_snowleopard_glossy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_aurora_snowleopard_glossy.png');
+}
+
+.ico.fi-screen_blaze-of-light, .ico.screen_blaze-of-light {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_blaze-of-light.png');
+}
+
+.ico.fi-screen_blaze-of-light_glossy, .ico.screen_blaze-of-light_glossy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_blaze-of-light_glossy.png');
+}
+
+.ico.fi-screen_blazeoflight, .ico.screen_blazeoflight {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_blazeoflight.png');
+}
+
+.ico.fi-screen_lensflare, .ico.screen_lensflare {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_lensflare.png');
+}
+
+.ico.fi-screen_lensflare_glossy, .ico.screen_lensflare_glossy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_lensflare_glossy.png');
+}
+
+.ico.fi-screen_rulers, .ico.screen_rulers {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_rulers.png');
+}
+
+.ico.fi-screen_rulers_glossy, .ico.screen_rulers_glossy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_rulers_glossy.png');
+}
+
+.ico.fi-screen_sleep, .ico.screen_sleep {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_sleep.png');
+}
+
+.ico.fi-screen_sleep_glossy, .ico.screen_sleep_glossy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_sleep_glossy.png');
+}
+
+.ico.fi-screen_tron-legacy, .ico.screen_tron-legacy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_tron-legacy.png');
+}
+
+.ico.fi-screen_tron-legacy_glossy, .ico.screen_tron-legacy_glossy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_tron-legacy_glossy.png');
+}
+
+.ico.fi-screen_twitter, .ico.screen_twitter {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_twitter.png');
+}
+
+.ico.fi-screen_twitter_glossy, .ico.screen_twitter_glossy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_twitter_glossy.png');
+}
+
+.ico.fi-screen_user, .ico.screen_user {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_user.png');
+}
+
+.ico.fi-screen_windows, .ico.screen_windows {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_windows.png');
+}
+
+.ico.fi-screen_windows_glossy, .ico.screen_windows_glossy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/screen_windows_glossy.png');
+}
+
+.ico.fi-search, .ico.search {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/search.png');
+}
+
+.ico.fi-security, .ico.security {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/security.png');
+}
+
+.ico.fi-shopping_basket, .ico.shopping_basket {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/shopping_basket.png');
+}
+
+.ico.fi-show_reel, .ico.show_reel {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/show_reel.png');
+}
+
+.ico.fi-sign_available, .ico.sign_available {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sign_available.png');
+}
+
+.ico.fi-sign_available_red, .ico.sign_available_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sign_available_red.png');
+}
+
+.ico.fi-sign_busy, .ico.sign_busy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sign_busy.png');
+}
+
+.ico.fi-sign_busy_red, .ico.sign_busy_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sign_busy_red.png');
+}
+
+.ico.fi-sign_free, .ico.sign_free {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sign_free.png');
+}
+
+.ico.fi-sign_free_red, .ico.sign_free_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sign_free_red.png');
+}
+
+.ico.fi-sign_hire_me, .ico.sign_hire_me {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sign_hire_me.png');
+}
+
+.ico.fi-sign_hire_me_red, .ico.sign_hire_me_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sign_hire_me_red.png');
+}
+
+.ico.fi-sign_we-are-hiring, .ico.sign_we-are-hiring {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sign_we-are-hiring.png');
+}
+
+.ico.fi-sign_we-are-hiring_red, .ico.sign_we-are-hiring_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sign_we-are-hiring_red.png');
+}
+
+.ico.fi-smashing-mag, .ico.smashing-mag {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/smashing-mag.png');
+}
+
+.ico.fi-smiley, .ico.smiley {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/smiley.png');
+}
+
+.ico.fi-snowflake, .ico.snowflake {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/snowflake.png');
+}
+
+.ico.fi-social_aim, .ico.social_aim {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_aim.png');
+}
+
+.ico.fi-social_amazon, .ico.social_amazon {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_amazon.png');
+}
+
+.ico.fi-social_apple, .ico.social_apple {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_apple.png');
+}
+
+.ico.fi-social_appstore, .ico.social_appstore {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_appstore.png');
+}
+
+.ico.fi-social_behance, .ico.social_behance {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_behance.png');
+}
+
+.ico.fi-social_blogger, .ico.social_blogger {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_blogger.png');
+}
+
+.ico.fi-social_brightkite, .ico.social_brightkite {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_brightkite.png');
+}
+
+.ico.fi-social_brightkite_flag, .ico.social_brightkite_flag {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_brightkite_flag.png');
+}
+
+.ico.fi-social_delicious, .ico.social_delicious {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_delicious.png');
+}
+
+.ico.fi-social_designfloat, .ico.social_designfloat {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_designfloat.png');
+}
+
+.ico.fi-social_designmoo, .ico.social_designmoo {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_designmoo.png');
+}
+
+.ico.fi-social_deviantart, .ico.social_deviantart {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_deviantart.png');
+}
+
+.ico.fi-social_digg, .ico.social_digg {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_digg.png');
+}
+
+.ico.fi-social_digg_guy, .ico.social_digg_guy {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_digg_guy.png');
+}
+
+.ico.fi-social_dopplr, .ico.social_dopplr {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_dopplr.png');
+}
+
+.ico.fi-social_dribbble, .ico.social_dribbble {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_dribbble.png');
+}
+
+.ico.fi-social_ebay, .ico.social_ebay {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_ebay.png');
+}
+
+.ico.fi-social_ebay_colored, .ico.social_ebay_colored {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_ebay_colored.png');
+}
+
+.ico.fi-social_evernote, .ico.social_evernote {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_evernote.png');
+}
+
+.ico.fi-social_facebook, .ico.social_facebook {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_facebook.png');
+}
+
+.ico.fi-social_flickr, .ico.social_flickr {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_flickr.png');
+}
+
+.ico.fi-social_foursquare, .ico.social_foursquare {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_foursquare.png');
+}
+
+.ico.fi-social_friendfeed, .ico.social_friendfeed {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_friendfeed.png');
+}
+
+.ico.fi-social_google, .ico.social_google {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_google.png');
+}
+
+.ico.fi-social_google_buzz, .ico.social_google_buzz {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_google_buzz.png');
+}
+
+.ico.fi-social_google_talk, .ico.social_google_talk {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_google_talk.png');
+}
+
+.ico.fi-social_gowalla, .ico.social_gowalla {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_gowalla.png');
+}
+
+.ico.fi-social_last_fm, .ico.social_last_fm {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_last_fm.png');
+}
+
+.ico.fi-social_linked_in, .ico.social_linked_in {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_linked_in.png');
+}
+
+.ico.fi-social_meinvz, .ico.social_meinvz {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_meinvz.png');
+}
+
+.ico.fi-social_mixxt, .ico.social_mixxt {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_mixxt.png');
+}
+
+.ico.fi-social_mobileme, .ico.social_mobileme {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_mobileme.png');
+}
+
+.ico.fi-social_mynameisE, .ico.social_mynameisE {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_mynameisE.png');
+}
+
+.ico.fi-social_myspace, .ico.social_myspace {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_myspace.png');
+}
+
+.ico.fi-social_netvibes, .ico.social_netvibes {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_netvibes.png');
+}
+
+.ico.fi-social_ning, .ico.social_ning {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_ning.png');
+}
+
+.ico.fi-social_paypal, .ico.social_paypal {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_paypal.png');
+}
+
+.ico.fi-social_posterous, .ico.social_posterous {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_posterous.png');
+}
+
+.ico.fi-social_qik, .ico.social_qik {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_qik.png');
+}
+
+.ico.fi-social_reddit, .ico.social_reddit {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_reddit.png');
+}
+
+.ico.fi-social_schuelervz, .ico.social_schuelervz {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_schuelervz.png');
+}
+
+.ico.fi-social_sevenload, .ico.social_sevenload {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_sevenload.png');
+}
+
+.ico.fi-social_skype, .ico.social_skype {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_skype.png');
+}
+
+.ico.fi-social_studivz, .ico.social_studivz {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_studivz.png');
+}
+
+.ico.fi-social_stumble_upon, .ico.social_stumble_upon {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_stumble_upon.png');
+}
+
+.ico.fi-social_technorati, .ico.social_technorati {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_technorati.png');
+}
+
+.ico.fi-social_todo, .ico.social_todo {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_todo.png');
+}
+
+.ico.fi-social_tumblr, .ico.social_tumblr {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_tumblr.png');
+}
+
+.ico.fi-social_twitter, .ico.social_twitter {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_twitter.png');
+}
+
+.ico.fi-social_twitter_bird, .ico.social_twitter_bird {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_twitter_bird.png');
+}
+
+.ico.fi-social_twitter_retweet, .ico.social_twitter_retweet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_twitter_retweet.png');
+}
+
+.ico.fi-social_vimeo, .ico.social_vimeo {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_vimeo.png');
+}
+
+.ico.fi-social_vimeo_V, .ico.social_vimeo_V {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_vimeo_V.png');
+}
+
+.ico.fi-social_xing, .ico.social_xing {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_xing.png');
+}
+
+.ico.fi-social_yahoo_messenger, .ico.social_yahoo_messenger {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_yahoo_messenger.png');
+}
+
+.ico.fi-social_yahoo_messenger_smiley, .ico.social_yahoo_messenger_smiley {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_yahoo_messenger_smiley.png');
+}
+
+.ico.fi-social_you_tube, .ico.social_you_tube {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_you_tube.png');
+}
+
+.ico.fi-social_zootool, .ico.social_zootool {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/social_zootool.png');
+}
+
+.ico.fi-speech_bubble_blue, .ico.speech_bubble_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/speech_bubble_blue.png');
+}
+
+.ico.fi-speech_bubble_green, .ico.speech_bubble_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/speech_bubble_green.png');
+}
+
+.ico.fi-speech_bubble_grey, .ico.speech_bubble_grey {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/speech_bubble_grey.png');
+}
+
+.ico.fi-speech_bubble_pink, .ico.speech_bubble_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/speech_bubble_pink.png');
+}
+
+.ico.fi-speech_bubble_red, .ico.speech_bubble_red {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/speech_bubble_red.png');
+}
+
+.ico.fi-speech_bubble_violet, .ico.speech_bubble_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/speech_bubble_violet.png');
+}
+
+.ico.fi-speed_kmh, .ico.speed_kmh {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/speed_kmh.png');
+}
+
+.ico.fi-speed_mph, .ico.speed_mph {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/speed_mph.png');
+}
+
+.ico.fi-splash_beta_blue, .ico.splash_beta_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_beta_blue.png');
+}
+
+.ico.fi-splash_beta_brown, .ico.splash_beta_brown {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_beta_brown.png');
+}
+
+.ico.fi-splash_beta_green, .ico.splash_beta_green {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_beta_green.png');
+}
+
+.ico.fi-splash_beta_lightblue, .ico.splash_beta_lightblue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_beta_lightblue.png');
+}
+
+.ico.fi-splash_beta_lightgreen, .ico.splash_beta_lightgreen {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_beta_lightgreen.png');
+}
+
+.ico.fi-splash_beta_orange, .ico.splash_beta_orange {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_beta_orange.png');
+}
+
+.ico.fi-splash_beta_pink, .ico.splash_beta_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_beta_pink.png');
+}
+
+.ico.fi-splash_beta_rose, .ico.splash_beta_rose {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_beta_rose.png');
+}
+
+.ico.fi-splash_beta_violet, .ico.splash_beta_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_beta_violet.png');
+}
+
+.ico.fi-splash_blue, .ico.splash_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_blue.png');
+}
+
+.ico.fi-splash_brown, .ico.splash_brown {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_brown.png');
+}
+
+.ico.fi-splash_green1, .ico.splash_green1 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_green1.png');
+}
+
+.ico.fi-splash_green2, .ico.splash_green2 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_green2.png');
+}
+
+.ico.fi-splash_lightblue, .ico.splash_lightblue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_lightblue.png');
+}
+
+.ico.fi-splash_new_blue, .ico.splash_new_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_new_blue.png');
+}
+
+.ico.fi-splash_new_brown, .ico.splash_new_brown {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_new_brown.png');
+}
+
+.ico.fi-splash_new_green1, .ico.splash_new_green1 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_new_green1.png');
+}
+
+.ico.fi-splash_new_green2, .ico.splash_new_green2 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_new_green2.png');
+}
+
+.ico.fi-splash_new_lightblue, .ico.splash_new_lightblue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_new_lightblue.png');
+}
+
+.ico.fi-splash_new_orange, .ico.splash_new_orange {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_new_orange.png');
+}
+
+.ico.fi-splash_new_pink, .ico.splash_new_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_new_pink.png');
+}
+
+.ico.fi-splash_new_rose, .ico.splash_new_rose {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_new_rose.png');
+}
+
+.ico.fi-splash_new_violet, .ico.splash_new_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_new_violet.png');
+}
+
+.ico.fi-splash_orange, .ico.splash_orange {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_orange.png');
+}
+
+.ico.fi-splash_pink, .ico.splash_pink {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_pink.png');
+}
+
+.ico.fi-splash_rose, .ico.splash_rose {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_rose.png');
+}
+
+.ico.fi-splash_violet, .ico.splash_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/splash_violet.png');
+}
+
+.ico.fi-star, .ico.star {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/star.png');
+}
+
+.ico.fi-star_empty, .ico.star_empty {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/star_empty.png');
+}
+
+.ico.fi-star_half, .ico.star_half {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/star_half.png');
+}
+
+.ico.fi-sun, .ico.sun {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sun.png');
+}
+
+.ico.fi-super_mario_coin, .ico.super_mario_coin {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/super_mario_coin.png');
+}
+
+.ico.fi-super_mario_mushroom, .ico.super_mario_mushroom {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/super_mario_mushroom.png');
+}
+
+.ico.fi-super_mario_mushroom_one_up, .ico.super_mario_mushroom_one_up {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/super_mario_mushroom_one_up.png');
+}
+
+.ico.fi-super_mario_piranha_plant, .ico.super_mario_piranha_plant {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/super_mario_piranha_plant.png');
+}
+
+.ico.fi-super_mario_question_box, .ico.super_mario_question_box {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/super_mario_question_box.png');
+}
+
+.ico.fi-super_mario_rocket, .ico.super_mario_rocket {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/super_mario_rocket.png');
+}
+
+.ico.fi-sync, .ico.sync {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/sync.png');
+}
+
+.ico.fi-tablet, .ico.tablet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/tablet.png');
+}
+
+.ico.fi-tag, .ico.tag {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/tag.png');
+}
+
+.ico.fi-tag_barcode, .ico.tag_barcode {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/tag_barcode.png');
+}
+
+.ico.fi-tag_white, .ico.tag_white {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/tag_white.png');
+}
+
+.ico.fi-tag_white_barcode, .ico.tag_white_barcode {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/tag_white_barcode.png');
+}
+
+.ico.fi-technorati, .ico.technorati {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/technorati.png');
+}
+
+.ico.fi-technoroti, .ico.technoroti {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/technoroti.png');
+}
+
+.ico.fi-terminal, .ico.terminal {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/terminal.png');
+}
+
+.ico.fi-to-do-list, .ico.to-do-list {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/to-do-list.png');
+}
+
+.ico.fi-to-do-list_checked1, .ico.to-do-list_checked1 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/to-do-list_checked1.png');
+}
+
+.ico.fi-to-do-list_checked2, .ico.to-do-list_checked2 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/to-do-list_checked2.png');
+}
+
+.ico.fi-to-do-list_checked3, .ico.to-do-list_checked3 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/to-do-list_checked3.png');
+}
+
+.ico.fi-trash_empty, .ico.trash_empty {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/trash_empty.png');
+}
+
+.ico.fi-trash_full, .ico.trash_full {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/trash_full.png');
+}
+
+.ico.fi-twitter, .ico.twitter {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/twitter.png');
+}
+
+.ico.fi-twitter_standing, .ico.twitter_standing {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/twitter_standing.png');
+}
+
+.ico.fi-universal_binary, .ico.universal_binary {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/universal_binary.png');
+}
+
+.ico.fi-usb-stick, .ico.usb-stick {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/usb-stick.png');
+}
+
+.ico.fi-user, .ico.user {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user.png');
+}
+
+.ico.fi-user_add, .ico.user_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_add.png');
+}
+
+.ico.fi-user_alert, .ico.user_alert {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_alert.png');
+}
+
+.ico.fi-user_check, .ico.user_check {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_check.png');
+}
+
+.ico.fi-user_count, .ico.user_count {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_count.png');
+}
+
+.ico.fi-user_delete, .ico.user_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_delete.png');
+}
+
+.ico.fi-user_download, .ico.user_download {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_download.png');
+}
+
+.ico.fi-user_group, .ico.user_group {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_group.png');
+}
+
+.ico.fi-user_group_add, .ico.user_group_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_group_add.png');
+}
+
+.ico.fi-user_group_alert, .ico.user_group_alert {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_group_alert.png');
+}
+
+.ico.fi-user_group_check, .ico.user_group_check {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_group_check.png');
+}
+
+.ico.fi-user_group_colored, .ico.user_group_colored {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_group_colored.png');
+}
+
+.ico.fi-user_group_count, .ico.user_group_count {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_group_count.png');
+}
+
+.ico.fi-user_group_delete, .ico.user_group_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_group_delete.png');
+}
+
+.ico.fi-user_group_download, .ico.user_group_download {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_group_download.png');
+}
+
+.ico.fi-user_speech, .ico.user_speech {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/user_speech.png');
+}
+
+.ico.fi-vcard, .ico.vcard {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/vcard.png');
+}
+
+.ico.fi-vcard_add, .ico.vcard_add {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/vcard_add.png');
+}
+
+.ico.fi-vcard_check, .ico.vcard_check {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/vcard_check.png');
+}
+
+.ico.fi-vcard_delete, .ico.vcard_delete {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/vcard_delete.png');
+}
+
+.ico.fi-vcard_download, .ico.vcard_download {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/vcard_download.png');
+}
+
+.ico.fi-vcard_forward, .ico.vcard_forward {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/vcard_forward.png');
+}
+
+.ico.fi-viagra, .ico.viagra {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/viagra.png');
+}
+
+.ico.fi-viagra_female, .ico.viagra_female {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/viagra_female.png');
+}
+
+.ico.fi-viagra_professional, .ico.viagra_professional {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/viagra_professional.png');
+}
+
+.ico.fi-wacom_intuos4, .ico.wacom_intuos4 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/wacom_intuos4.png');
+}
+
+.ico.fi-wallet, .ico.wallet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/wallet.png');
+}
+
+.ico.fi-wallet_bills, .ico.wallet_bills {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/wallet_bills.png');
+}
+
+.ico.fi-wallet_coins, .ico.wallet_coins {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/wallet_coins.png');
+}
+
+.ico.fi-wallet_louis_vuitton, .ico.wallet_louis_vuitton {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/wallet_louis_vuitton.png');
+}
+
+.ico.fi-wallet_louis_vuitton_bills, .ico.wallet_louis_vuitton_bills {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/wallet_louis_vuitton_bills.png');
+}
+
+.ico.fi-wallet_louis_vuitton_coins, .ico.wallet_louis_vuitton_coins {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/wallet_louis_vuitton_coins.png');
+}
+
+.ico.fi-wallet_louis_vuitton_money, .ico.wallet_louis_vuitton_money {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/wallet_louis_vuitton_money.png');
+}
+
+.ico.fi-wallet_money, .ico.wallet_money {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/wallet_money.png');
+}
+
+.ico.fi-web, .ico.web {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/web.png');
+}
+
+.ico.fi-web_blue, .ico.web_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/web_blue.png');
+}
+
+.ico.fi-web_violet, .ico.web_violet {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/web_violet.png');
+}
+
+.ico.fi-window_osx, .ico.window_osx {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/window_osx.png');
+}
+
+.ico.fi-zoom_0, .ico.zoom_0 {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/zoom_0.png');
+}
+
+.ico.fi-zoom_in, .ico.zoom_in {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/zoom_in.png');
+}
+
+.ico.fi-zoom_in_blue, .ico.zoom_in_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/zoom_in_blue.png');
+}
+
+.ico.fi-zoom_original, .ico.zoom_original {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/zoom_original.png');
+}
+
+.ico.fi-zoom_out, .ico.zoom_out {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/zoom_out.png');
+}
+
+.ico.fi-zoom_out_blue, .ico.zoom_out_blue {
+    background-image: url('//faculty.chemeketa.edu/ljohns10/online/static/img/flavicons/zoom_out_blue.png');
+}

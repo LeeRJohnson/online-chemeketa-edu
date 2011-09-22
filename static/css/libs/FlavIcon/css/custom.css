@@ -1,0 +1,36 @@
+﻿/*  Custom and abbr. pngs and Assorted ico Classes
+--------------------------------------------------------------------- */
+
+.ico.time       {   background-image:url(../pngs/clock.png);}
+.ico.check      {   background-image:url(../pngs/check.png);}
+.ico.delivery   {   background-image:url(../pngs/box_address.png);}
+
+.ico.about      {   background-image:url(../pngs/qbic.png);}
+.ico.support    {   background-image:url(../pngs/security.png);}
+.ico.search     {   background-image:url(../pngs/search.png);}
+.ico.contact-dir{   background-image:url(../pngs/user_group_colored.png);}
+
+.ico.system     {   background-image:url(../pngs/harddrive.png);}
+.ico.inst-tool  {   background-image:url(../pngs/case.png);}
+
+.ico.download   {   background-image:url(../pngs/box_download.png);}
+.ico.demo       {   background-image:url(../pngs/screen_aurora.png);}
+.ico.tutor      {   background-image:url(../pngs/screen_user.png);}
+.ico.train      {   background-image:url(../pngs/cutting_pad.png);}
+
+.ico.advise     {   background-image:url(../pngs/user_speech.png);}
+.ico.apply      {   background-image:url(../pngs/check.png);}
+.ico.orient     {   background-image:url(../pngs/compass.png);}
+
+.ico.web-form   {   background-image:url(../pngs/browser.png);}
+.ico.pdf        {   background-image:url(../pngs/file_pdf.png);}
+.ico.rss        {   background-image:url(../pngs/rss.png);}
+                    
+.ico.summer     {   background-image:url(../pngs/sun.png);}
+.ico.fall       {   background-image:url(../pngs/fall_leaf.png);}
+.ico.winter     {   background-image:url(../pngs/snowflake.png);}
+.ico.spring     {   background-image:url(../pngs/grass.png);}
+
+.ico.zoom-in    {   background-image:url(../pngs/zoom_in.png);}
+.ico.zoom-out   {   background-image:url(../pngs/zoom_out.png);}
+.ico.fit-width  {   background-image:url(../pngs/fit_width.png);}

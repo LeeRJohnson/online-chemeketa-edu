@@ -1,0 +1,49 @@
+﻿/*-------------------------------------------------------------------
+FlavIcon CSS Framework Plug-in (Version 0.8) 
+Created by Lee R. Johnson (http://design.leerjohnson.com/ )
+
+Based on some CSS created for http://online.chemeketa.edu/
+to add icons through CSS instead of img tags at 
+    (http://online.chemeketa.edu/faculty/LMSReview/)done 2009-03-02)
+
+First based on the free icon set "Flavour" created by
+Oliver Twardowsk (http://www.addictedtocoffee.de/).
+Available at:
+    (http://www.smashingmagazine.com/2009/01/23/
+friday-freebies-flavours-icon-set-and-cute-tweeters-icon-set/)
+
+v0.8 (Only intended for use with existing Chemeketa Site Design)
+Udated 2009-03-02: 
+ * ADDED: Right positioning of icon
+ * ADDED: ico base icon class
+ * DEPRECATE: Parent hd based icon
+
+--------------------------------------------------------------------- */
+
+
+/* Generic base icon class.  
+--------------------------------------------------------------------- */
+
+/* Defaults for ico class. Left of content and generic web icon */
+.ico {
+    display:block;
+    /* based on original size 48px of flavour pngs */
+    padding-left:56px;
+    min-height:56px;
+    background:transparent url(../pngs/web.png) no-repeat scroll 0px center;}
+
+h1.ico, h2.ico, h3.ico, h4.ico, h5.ico, h6.ico
+{   background-position:left center;  }    
+
+.hd .ico,
+.hd.ico  {
+    min-height:56px;
+    line-height:50px; margin:0;
+}
+.ico.right {
+    padding-right:56px;
+    padding-left:0px;
+    background-position: right center;
+}
+
+a.ico { display:inline-block;}

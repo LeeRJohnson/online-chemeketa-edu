@@ -1,0 +1,151 @@
+<!--#include file="static/inc/doctype.html"-->
+<title>Chemeketa Online</title>
+<!--#include file="static/inc/col-head.html"-->
+<body id="ccc-online">
+<!--#include file="static/inc/top.html"-->
+        <header class="page-title box">
+            <hgroup class="container">
+                <h1>Page 2 Two Col Right Col Box</h1>
+            </hgroup>
+        </header>
+<div class="first span-15 colborder">
+<h1>&lt;div class="first span-15 colborder"&gt;</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+euismod tincidunt ut et accumsan et iusto odio dignissim qui blandit praesent luptatum
+zzril delenit Lorem ipsum dolor sit amet, volutpat. </p>
+<h2>This is 2rd level heading</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+<h3>This is 3rd level heading</h3>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+<h4>This is 4th level heading</h4>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+<h5>This is 5th level heading</h5>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+<h6>This is 6th level heading</h6>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        <div id="block-elements">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
+        est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+        Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
+        lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent
+        dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
+        eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+        facilisis luctus, metus</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
+        est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+        Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
+        lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent
+        dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
+        eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+        facilisis luctus, metus</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
+        est. Mauris placerat eleifend leo.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+        amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
+        est. Mauris placerat eleifend leo.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+        turpis egestas.</p>
+        <div>
+            This is a <code>div</code> element. Lorem ipsum dolor sit amet, elit, sed diam nonummy
+            nibh euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut laoreet dolore magna aliquam erat volutpat. (End of <code>div</code>.)
+        </div>
+        <blockquote>
+            <p>This is a block quotation containing a <em>single</em> paragraph. Lorem ipsum
+            dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+            ut laoreet dolore magna aliquam erat volutpat.</p>
+        </blockquote>
+        <p>The following contains address information about the author, in an <code>address</code>
+        element and may be used by authors to supply contact information for a document or a major part of a document such as a form.
+        This element often appears at the beginning or end of a document.</p>
+        <address class="vcard">
+            <a href="http://leerjohnson.com">Lee R. Johnson</a> <br />
+            <a class="tel" href="voice:+15038516041">+1 503 851 6041</a> |
+	        <a class="email" href="mailto:design@leerjohnson.com">design@leerjohnson.com</a><br />
+            <span class="adr">
+	            <span class="street-address">3454 Ipsum Lane N.E.</span> |
+	            <span class="locality">Kiezer</span>, <span class="region">Oregon</span> <span class="postal-code">97303</span> |
+	            <span class="country-name">United States</span>
+            </span>
+        </address>
+
+        <p>This next bit shows that PREformatted text is working.</p>
+        <pre>1
+ 2
+  3
+   4
+    5
+</pre>
+    </div>
+</div>
+<div class="span-6 last box"><p>This is a paragraph before <strong>unnumbered</strong> lists (<code>ul</code>).
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+        <ul>
+           <li><p>List item content wrapped in a <code>p</code>.  Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p></li>
+           <li><p>List item content wrapped in a <code>p</code>. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p></li>
+           <li><p>Multiple <code>p</code> elements in a list item.  Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
+               <p>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</p>
+            </li>
+        </ul>
+        <ul>
+           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+           <li>Aliquam tincidunt mauris eu risus.</li>
+           <li>Vestibulum auctor dapibus neque.</li>
+        </ul>
+
+
+        <p>This is a paragraph before a <strong>numbered</strong> list (<code>ol</code>).
+        Note that the spacing between a paragraph and a list before or after that is hard
+        to tune in a user style sheet. You can't guess which paragraphs are logically related
+        to a list, e.g. as a "list header".</p>
+        <ol>
+            <li>One.</li>
+            <li>Two.</li>
+            <li>Three. </li>
+            <li>Four. </li>
+            <li>Five</li>
+            <li>Six</li>
+            <li>Seven</li>
+            <li>Eight</li>
+            <li>Nine</li>
+            <li>Ten</li>
+        </ol>
+        <p>This is a paragraph before a <strong>definition</strong> list (<code>dl</code>).
+        In principle, such a list should consist of <em>terms</em> and associated definitions.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+        <dl>
+            <dt>Apple</dt>
+            <dd>
+                is a fruit.</dd>
+            <dt>Banana</dt>
+            <dd>
+                Is also a fruit.</dd>
+            <dt>Tomato</dt>
+            <dd>
+                Is debatable. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</dd>
+        </dl>
+</div>        
+<!--#include file="static/inc/bottom.html"-->
