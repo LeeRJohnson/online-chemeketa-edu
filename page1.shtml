@@ -3,7 +3,7 @@
 <!--#include file="static/inc/col-head.html"-->
 <body id="ccc-online">
 <!--#include file="static/inc/top.html"-->
-        <header class="page-title box">
+<header class="page-title box">
             <hgroup class="container">
                 <h1>Page Title</h1>
             </hgroup>

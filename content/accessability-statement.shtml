@@ -1,0 +1,189 @@
+<!--#include file="static/inc/doctype.html"-->
+<title>Site Accessibility and Usage &mdash; Chemeketa Online</title>
+<meta name="author" content="Lee R Johnson">
+<!--#include file="static/inc/col-head.html"-->
+<body id="ccc-online">
+<!--#include file="static/inc/top.html"-->
+<header class="page-title box">
+    <hgroup class="container">
+        <h1>Site Accessibility and Usage &mdash; Chemeketa Online</h1>
+    </hgroup>
+</header>
+<div class="first span-6 box colborder">
+
+</div>
+<div class="span-16 last">
+    <h2>Accessibility Statement</h2>
+
+    <p>We are committed to ensuring that our website is accessible to everyone. If you have any questions or suggestions
+        regarding the accessibility of this site, please use our <a href="accessability-statement.shtml#null">contact form</a>, as we are continually
+        striving to improve the experience for all of our visitors.</p>
+
+    <h2>Standards compliance</h2>
+    <ol>
+        <li>All pages on this site follow U.S. Federal Government Section 508 Guidelines.</li>
+        <li>All pages on this site follow priorities 1 &amp; 2 guidelines of the W3C Web Content Accessibility
+            Guidelines.
+        </li>
+        <li>All pages on this site validate as <acronym title="Hypertext Markup Language">HTML</acronym> 4.01 Strict.
+        </li>
+        <li>All pages on this site use structured semantic markup. <code>H2</code> tags are used for main titles, <code>H3</code>
+            tags for subtitles. For example, on this page, JAWS users can skip to the next section within the
+            accessibility statement by pressing <kbd>ALT+INSERT+3</kbd>. Opera users can skip sections by using
+            "<kbd>S</kbd>" and "<kbd>W</kbd>" to cycle forwards and backwards respectively through headings.
+        </li>
+    </ol>
+    <h3>Structural Markup</h3>
+
+    <p><span>Web pages on <a class="linkclass" href="http://www.myDomain.com">www.myDomain.com</a> include 4 different areas:</span>
+    </p>
+    <ol>
+        <li>A header bar that includes the main navigation,</li>
+        <li>A "side bar",</li>
+        <li>A main content area,</li>
+        <li>A footer.</li>
+    </ol>
+    <p>When CSS (Cascading Styles Sheet) are not applied to a document (or when using a screen reader), the 4 areas are
+        read in the above order.</p>
+
+    <h3>Access Keys</h3>
+
+    <p>This site uses the <code>accesskey</code> attribute. Most browsers support jumping to specific links by typing
+        keys defined on the web site. On Windows, you can press <kbd>ALT</kbd> + an access key; on Macintosh, you can
+        press <kbd>Control</kbd> + an access key.</p>
+
+    <p>Unfortunately, access keys often clash with keys set aside for use with other <acronym
+            title="User Agent">UA</acronym>s (i.e. assistive technology). For this reason, we have decided to not set
+        default access keys, but rather let you set your own (for specific elements) through our <a
+                title="Define your own access keys" href="accessability-statement.shtml#null">Access Key Preferences</a> form.</p>
+
+    <p>Note: Internet Explorer requires you to press <kbd>ALT</kbd> + an access key + <kbd>Enter</kbd> to access linked
+        documents.</p>
+
+    <p class="note"><img class="impIcon" src="/img/important.gif" alt="Important"> You may want to read <a
+            href="user_defined_accesskeys.asp">User defined Access Keys</a>.</p>
+
+    <h3>Images</h3>
+    <ol>
+        <li>Unless they are purely decorative items, all images used on this web site have suitable <code>alt</code>
+            attributes.
+        </li>
+        <li>Content should be usable/accessible with images "off" (disabled).</li>
+        <li>The main navigation bar on this site uses an Image Replacement technique that makes the links accessible to
+            non-visual browsers.
+        </li>
+    </ol>
+    <h3>Links</h3>
+    <ol>
+        <li>Many links have title attributes which describe the link in greater detail, unless the text of the link
+            already fully describes the target.
+        </li>
+        <li>Links are written to make sense out of context.</li>
+        <li>The first link in every document is a "SkipNav"; it is to skip directly to what is considered the main
+            section of the page (the content). We have implemented this feature in a way that it allows Internet
+            Explorer users to <em>tab through</em> (past that target link).
+        </li>
+        <li><acronym title="Uniform Resource Locator">URL</acronym>s are permanent whenever possible.</li>
+    </ol>
+    <h3>Forms</h3>
+    <ol>
+        <li>All form controls are appropriately and explicitly labeled.
+        </li>
+        <li>We provide an email address as an alternative form of access for our online forms.</li>
+        <li>Forms on this site can be accessed through an access key (<kbd>1</kbd>).</li>
+        <li>Form validation routine does not rely on client-side script.</li>
+    </ol>
+    <h3>Scripts</h3>
+    <ol>
+        <li>We are using non obtrusive client-side scripts.</li>
+        <li>Content of this web site is usable without JavaScript support.</li>
+    </ol>
+    <h3>Pop up Windows</h3>
+    <ol>
+        <li>In visual browsers, unless Javascript is disabled, a small icon appears next to links to external resources,
+            the title attribute of these links says "(opens in new window)".
+        </li>
+        <li>Browsers with Popup Blockers should be able to access these external documents.</li>
+    </ol>
+    <p class="note"><img class="impIcon" src="/img/important.gif" alt="Important"> You may want to read <a
+            href="popup_window_with_no_extra_markup.asp">Popup windows with no extra markup</a>.</p>
+
+    <h3>Visual design</h3>
+    <ol>
+        <li>This site uses cascading style sheets for visual layout.</li>
+        <li>This site uses only relative font sizes, compatible with the user-specified "text size" option in visual
+            browsers.
+        </li>
+        <li>If your browser or browsing device does not support stylesheets at all, the content of each page is still
+            readable.
+        </li>
+        <li>Any information conveyed through the use of color is also available without color (i.e. text based).</li>
+    </ol>
+    <h3>How to modify this site to fit your needs</h3>
+
+    <p>These links explain the many ways you can make the web more accessible to you.</p>
+
+    <h3>Accessibility references</h3>
+    <ol>
+        <li><a href="http://www.w3.org/TR/WCAG10/" title="Web Content Accessibility Guidelines 1.0">W3 accessibility
+            guidelines</a>, which explains the reasons behind each guideline.
+        </li>
+        <li><a href="http://www.w3.org/TR/WCAG10-TECHS/"
+               title="Techniques for Web Content Accessibility Guidelines 1.0">W3 accessibility techniques</a>, which
+            explains how to implement each guideline.
+        </li>
+        <li><a href="http://www.w3.org/TR/WCAG10/full-checklist.html"
+               title="Checklist of Checkpoints for Web Content Accessibility Guidelines 1.0">W3 accessibility
+            checklist</a>, a busy developer's guide to accessibility.
+        </li>
+        <li><a href="http://www.access-board.gov/sec508/guide/1194.22.htm"
+               title="Section 508 Guidelines for Web-based Intranet and Internet Information and Applications">U.S.
+            Federal Government Section 508 accessibility guidelines</a>.
+        </li>
+    </ol>
+    <h3>Accessibility software</h3>
+    <ol>
+        <li><a href="http://www.freedomscientific.com/fs_downloads/jaws.asp">JAWS</a>, a screen reader for Windows. A
+            time-limited, downloadable demo is available.
+        </li>
+        <li><a href="http://www-3.ibm.com/able/hpr.html">Home Page Reader</a>, a screen reader for Windows. A
+            downloadable demo is available.
+        </li>
+        <li><a href="http://lynx.browser.org/">Lynx</a>, a free text-only web browser for blind users with refreshable
+            Braille displays.
+        </li>
+        <li><a href="http://links.sourceforge.net/">Links</a>, a free text-only web browser for visual users with low
+            bandwidth.
+        </li>
+        <li><a href="http://www.opera.com/">Opera</a>, a visual browser with many accessibility-related features,
+            including text zooming, user stylesheets, image toggle. A free downloadable version is available. Compatible
+            with Windows, Macintosh, Linux, and several other operating systems.
+        </li>
+    </ol>
+    <h3>Accessibility services</h3>
+    <ol>
+        <li><a href="http://www.cast.org/bobby/">Bobby</a>, a free service to analyze web pages for compliance to
+            accessibility guidelines. A full-featured commercial version is also available.
+        </li>
+        <li><a href="http://validator.w3.org/">HTML Validator</a>, a free service for checking that web pages conform to
+            published <acronym title="hypertext markup language">HTML</acronym> standards.
+        </li>
+        <li><a href="http://www.delorie.com/web/wpbcv.html">Web Page Backward Compatibility Viewer</a>, a tool for
+            viewing your web pages <em>without</em> a variety of modern browser features.
+        </li>
+        <li><a href="http://www.delorie.com/web/lynxview.html">Lynx Viewer</a>, a free service for viewing what your web
+            pages would look like in Lynx.
+        </li>
+    </ol>
+    <h3>Related resources</h3>
+    <ol>
+        <li><a title="Web Accessibility in Mind" href="http://www.webaim.org/">WebAIM</a>, a non-profit organization
+            dedicated to improving accessibility to online learning materials.
+        </li>
+        <li><a href="http://trace.wisc.edu:80/world/web/">Designing More Usable Web Sites</a>, a large list of
+            additional resources.
+        </li>
+    </ol>
+    <!-- MAIN CONTENT ENDS --></div>
+
+<!--#include file="static/inc/bottom.html"-->
